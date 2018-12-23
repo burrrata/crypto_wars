@@ -14,7 +14,50 @@ Let's say that 2 friends named Alice and Bob want to start their own secret club
 Anyways, Alice and Bob come up with a plan... First they try using [secret colors](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange) because that seems to be [what everyone else is doing](https://www.youtube.com/watch?v=NmM9HA2MQGI), but when they try it out in practice it turns out that everything just turns brown (to shit). And who wants to live in a world that's all brown (shit)? Requiring a practical solution, Alice and Bob press on, and on one dismal afternoon while staring at the clock waiting for school to be over, the get hit by an idea! A big one! What if instead of using colors, they used numbers, but instead of using any random numbers, they used numbers that wrap around [like a clock does](https://www.youtube.com/watch?v=Yjrfm_oRO0w)?
 
 How would this work?! Well... Alice and Bob (or anyone else in the club) would each have a secret number 
+- following the wiki article: https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange
 
+```rust,editable
+// the base is a primitive root modulo
+// how do I explain that simply?
+
+fn main() {
+ 
+    // (b**p) % m
+    // rust makes exponential multiplication with i32 hard
+    // but hopefully this shed some more light on exactly what's going on
+    // feel free to uncomment the println!() macros to see for yourself! :)
+    fn exp_mod(b: i32,
+               p: i32,
+               m: i32) -> i32 {
+        
+        let mut out = (b * b) % m;
+        //println!("0: {}", out);
+        for i in 1..p-1 { //because the first iter of out took 2 off the base
+            out = (out * b) % m;
+            //println!("{}: {}", i, out);
+        }
+        out
+    }
+    
+    // Public Params
+    let modulus = 23;
+    let base = 5;
+    // Alice
+    let a_private = 4;
+    let a_public = exp_mod(base, a_private, modulus);
+    // Bob
+    let b_private = 3;
+    let b_public = exp_mod(base, b_private, modulus);
+
+    // Check Results
+    let to_a_from_b = exp_mod(b_public, a_private, modulus);
+    let to_b_from_a = exp_mod(a_public, b_private, modulus);
+    assert_eq!(to_a_from_b, to_b_from_a);
+    println!("to_a_from_b: {}", to_a_from_b);
+    println!("to_b_from_a: {}", to_b_from_a);
+    
+}
+```
 
 
 ### Recommend Research Resources
