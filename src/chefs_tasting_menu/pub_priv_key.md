@@ -68,7 +68,17 @@ Anyways, the way to check that Jim is part of the club is to do 2 things:
 - Whoever is in the club multiplies Jim's public number times itself as many times as the club secret number
 - They then write each number down on a piece paper, fold the papers into airplanes, and throw them at each other. If the numbers match they're in.
 
-[PROBLEM: this is **really** better suited to create a number to be used as an encryption code than an authentication code]
+```
+// PROBLEM: this is **really** better suited to create a number to be used as an encryption code than an authentication code
+// What if we keep the same story, except that...
+// the club DOES have a secret passphrase, but the
+// kids have to encrypt and decrypt that passphrase
+// using diffie-hellman pub/priv keys in order to 
+// keep eve from hearing it
+// and this works because everytime someone says
+// the passphrase it's scrambled differently according
+// to their public/private keys! 
+```
 
 Let's try this out!
 
