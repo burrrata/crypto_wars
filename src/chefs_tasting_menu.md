@@ -1,7 +1,5 @@
 # Chef's Tasting Menu
 
-<hr>
-
 ### Public Private Key Crypto
 prime numbers, modulo systems, and RSA style encryption/decryption
 
