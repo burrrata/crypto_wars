@@ -25,7 +25,9 @@ Then, the club gets a secret passphrase. At first only Alice and Bob know it, bu
 
 To get around this unfortunate dilema, Alice and Bob create a number system where, like clocks, the numbers wrap around if you go past the maximum number. In this case we're using a 24hrs clock that wraps around after 23. 
 
-Also, evryone who's part of the club has a secret number. In fact, the club itself even has a secret number. These numbers are so secret that no one knows what they are or might be. They are truly random and unknown. They could be anything...
+![clock](https://theproducersmiami.com/wp-content/uploads/2017/10/fascinating-24-inch-clock-24-inch-atomic-wall-clock-black-and-white-clock.jpg)
+
+Also, everyone who's part of the club has a secret number. In fact, the club itself even has a secret number. These numbers are so secret that no one knows what they are or might be. They are truly random and unknown. They could be anything...
 
 Everyone, including the club, also has a public number. These are kind of like an address and everyone knows what these are. How do we create these public numbers in a way that connects them to the private numbers? Well it's easy, just multiply the club's number by it's self (exponentiation) as many times as a person's secret number, but wrap around everytime they go past 23 (like on a clock). For example: if Jim's secret number is 4, then Jim would multiple the club's public number 4 times (5 * 5 * 5 * 5), but would wrap around everytime the value was higher than 23. The symbol for this is %, and the mathematical term is the [modulo operation](https://en.wikipedia.org/wiki/Modulo_operation). Try it out for yourself! 
 ```rust,editable
