@@ -14,18 +14,24 @@ and... (drumroll) a [cookbook](https://burrrata.github.io/the_cryptoeconomics_co
 
 # Chef's Tasting Menu
 
-### Public Private Key Crypto
-prime numbers, modulo systems, and RSA style encryption/decryption
+### part 1: A New Club
+// Alice and Bob build a treehouse. Like anyone with
+// a treehouse they start a secret club. Eve wants to
+// unmask their passphrase though so they create an
+// elaborate code to keep it secret.
 
 <hr>
 
-### Digital Signatures
-one-way trap doors, avalanche effects, and hash functions
+### part 2: Eve Strikes Back
+// Eve uses cryptanalysis to unscramble the messages and 
+// decrypt the code
 
 <hr>
 
-### Attacks
-pseudo "random" numbers, 
+### part 3: Return of the Code
+// we can explain why the current scrambling technique is flawed 
+// and explore better mechanisms for 1way hashing and message 
+// authentication (content addressing, avalanche functions, etc...)
 
 <hr>
 
