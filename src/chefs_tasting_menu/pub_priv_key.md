@@ -18,9 +18,34 @@ How would this work?! Well... Alice and Bob (or anyone else in the club) would e
 
 ```rust,editable
 // TODO:
+//
+// Primitive Root Modulo Stuff
 // - the base is a primitive root modulo
 // - this is not explained, thus this is not an end-to-end tutorial
 // - how do we explain this simply?
+//
+// Attacks and Failures
+// - it would be great to include a framework for people
+// - to try random values and see if they work or not
+// - 
+// - then create a game (with larger primes) where the secret
+// numbers are chosen randomly you have to prove that you
+// - know the secret number to get into the club (thus
+// - showing how it's easy to prove if you're in the club
+// - but much harder to break if you're not in the club)
+// - 
+// - then link to a real dh library in rust that explains
+// - how to use it in practice and provides secure code
+
+
+
+// This is the (editable) code that our friends Alice 
+// and Bob used for their secret club. Feel free to
+// uncomment the println!() macros to see what's going on.
+// This also happens to follow the example in the wikipedia
+// article on Diffie-Hellman key exchange, so feel free to
+// check that out as well,
+// https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange
 
 fn main() {
  
@@ -34,11 +59,10 @@ fn main() {
     // Bob's Private Key
     let b_private = 3;
     
-    // Function to perform exponential modulo artithmetic
+    // Function to perform exponential modulo artithmetic 
+    // because rust makes exponential multiplication with 
+    // i32 a real bother
     // (b**p) % m
-    // rust makes exponential multiplication with i32 a real bother
-    // but hopefully this sheds some more light on exactly what's going on
-    // feel free to uncomment the println!() macros to see for yourself! :)
     fn exp_mod(b: i32,
                p: i32,
                m: i32) -> i32 {
@@ -60,8 +84,8 @@ fn main() {
     let to_a_from_b = exp_mod(b_public, a_private, modulus);
     let to_b_from_a = exp_mod(a_public, b_private, modulus);
     assert_eq!(to_a_from_b, to_b_from_a);
-    println!("to_a_from_b: {}", to_a_from_b);
-    println!("to_b_from_a: {}", to_b_from_a);
+    //println!("to_a_from_b: {}", to_a_from_b);
+    //println!("to_b_from_a: {}", to_b_from_a);
     
 }
 ```
