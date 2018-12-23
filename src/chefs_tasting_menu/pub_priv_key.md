@@ -15,6 +15,8 @@ Let's say that 2 friends named Alice and Bob build a treeshouse. Like any kids w
 
 So, Alice and Bob come up with a plan... First they thought about using [secret colors](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange) because that seems to be [what everyone else is doing](https://www.youtube.com/watch?v=NmM9HA2MQGI), but when they tried it out everything just turns brown. This means anyone could just mix all the colors together to produce brown without actually knowing Alice and Bob's secret colors! Not cool, and besides, who wants to live in a world where everything's brown? Requiring a practical solution, Alice and Bob press on, and on one dismal afternoon, while staring at the clock, waiting, for school, to be over... they get an idea! A big one! What if instead of using colors, they used numbers, but instead of using any random numbers, they used numbers that wrap around [like a clock does](https://www.youtube.com/watch?v=Yjrfm_oRO0w)?
 
+![clock](https://theproducersmiami.com/wp-content/uploads/2017/10/fascinating-24-inch-clock-24-inch-atomic-wall-clock-black-and-white-clock.jpg)
+
 How would this help them share and verify the secret passphrase without Eve knowing?! 
 
 ```TODO: explain primitive root modulo stuff linking 5 to 23```
@@ -24,8 +26,6 @@ First, the club gets a number. After much consideration Alice and Bob decide tha
 Then, the club gets a secret passphrase. At first only Alice and Bob know it, but as well all know, 5 club is lit af so soon more people join. They all know the passphrase, but they can't say it out loud because Eve could be anywhere anytime, always watching... This is truly annoying.
 
 To get around this unfortunate dilema, Alice and Bob create a number system where, like clocks, the numbers wrap around if you go past the maximum number. In this case we're using a 24hrs clock that wraps around after 23. 
-
-![clock](https://theproducersmiami.com/wp-content/uploads/2017/10/fascinating-24-inch-clock-24-inch-atomic-wall-clock-black-and-white-clock.jpg)
 
 Also, everyone who's part of the club has a secret number. In fact, the club itself even has a secret number. These numbers are so secret that no one knows what they are or might be. They are truly random and unknown. They could be anything...
 
