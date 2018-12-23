@@ -72,50 +72,14 @@ Anyways, the way to check that Jim is part of the club is to do 2 things:
 Let's try this out!
 
 ```rust,editable
-// TODO:
-//
-// Primitive Root Modulo Stuff
-// - the base is a primitive root modulo
-// - this is not explained, thus this is not an end-to-end tutorial
-// - how do we explain this simply?
-//
-// Attacks and Failures
-// - it would be great to include a framework for people
-// - to try random values and see if they work or not
-// - 
-// - then create a game (with larger primes) where the secret
-// numbers are chosen randomly you have to prove that you
-// - know the secret number to get into the club (thus
-// - showing how it's easy to prove if you're in the club
-// - but much harder to break if you're not in the club)
-// - 
-// - then link to a real dh library in rust that explains
-// - how to use it in practice and provides secure code
-
-
-
-// This is the (editable) code that our friends Alice 
-// and Bob used for their secret club. Feel free to
-// uncomment the println!() macros to see what's going on.
-// This also happens to follow the example in the wikipedia
-// article on Diffie-Hellman key exchange, so feel free to
-// check that out as well,
-// https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange
-
 fn main() {
- 
-    // Alice and Bob's Agreed Upon Parameters
-    let base = 5;
-    let modulus = 23;
-
-    // Alice and Bob's Private Keys
-    let a_private = 4;
-    let b_private = 3;
     
-    // Function to perform exponential modulo artithmetic 
-    // because rust makes exponential multiplication with 
-    // i32 a real bother
+    // Club Parameters
+    let modulo = 23;
+    let club_base_number = 5;
+    
     // (b**p) % m
+    // b = base, p = private, m = modulo
     fn exp_mod(b: i32,
                p: i32,
                m: i32) -> i32 {
@@ -129,20 +93,29 @@ fn main() {
         out
     }
     
-    // Alice and Bob's Public Keys
-    let a_public = exp_mod(base, a_private, modulus);    
-    let b_public = exp_mod(base, b_private, modulus);
+    // Jim's Numbers
+    let jim_secret_number = 4; // 4
+    let jim_public_number = exp_mod(club_base_number, jim_secret_number, modulo); // 4
 
-    // Let's Check To See If It Worked!
-    let to_a_from_b = exp_mod(b_public, a_private, modulus);
-    let to_b_from_a = exp_mod(a_public, b_private, modulus);
-    assert_eq!(to_a_from_b, to_b_from_a);
-    //println!("to_a_from_b: {}", to_a_from_b);
-    //println!("to_b_from_a: {}", to_b_from_a);
+    // The Club's Numbers
+    let club_secret_number = 98;
+    let club_public_number = exp_mod(club_base_number, club_secret_number, modulo); // 9
+    
+    // Let's check to see if Jim is a member of the club
+    let jim_auth_number = exp_mod(club_public_number, jim_secret_number, modulo);
+    let club_auth_number = exp_mod(jim_public_number, club_secret_number, modulo);
+    assert_eq!(jim_auth_number, club_auth_number);
+    println!("Success! Welcome aboard Jim!");
+    println!("Jim's authentication number: {}", jim_auth_number);
+    println!("The club's authentication number for Jim: {}", club_auth_number);
     
 }
 ```
 
+Now you're probably wondering: "Isn't that a bit convoluted? I mean they could just have a list of people's names and then look out the window and see if that person is the person on the list!" Yes... they **could**, but what about on Halloween when everyone's wearing costumes, or at night when it's dark, or during they day when they're bored? These are the questions that keep me up at night, and apparently Alice and Bob feel the same way.
+
+
+<hr>
 
 ### TODO
 - make sure that there are no trailing references to the Club Public Number when it should be the Club Base Number which is 5.
