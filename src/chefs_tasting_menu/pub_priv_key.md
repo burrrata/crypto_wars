@@ -20,14 +20,15 @@ How would this work?!
 
 Well... first numbers would work like clocks in that if you go past the maximum they just wrap around again. In this case we're using a 24hrs clock that wraps around after 23. Second, the club needs a number. [TODO: explain primitive root modulo stuff here] After much consideration Alice and Bobs decide that the number shall be 5, and 5 shall be the number. They tell everyone. 5 club is lit af. Everyone wants in, esp Eve... 
 
-In order to keep things secret, everyone who's part of the club also has a secret number. Inside the secret club is a secret list of all the secret members and their secret numbers. If someone wants to get into the club, they can't just go about saying their secret numbers out loud though, so they create public numbers that everyone can see. How do they do this? Well it's easy, just multiply the club's public number by it's self (exponentiation) as many times as a person's secret number, but wrap around everytime they go past 23 (like on a clock). For example: if Jim's secret number is 4, then Jim would multiple the club's public number 4 times (5 * 5 * 5 * 5), but would wrap around everytime the value was higher than 23. The symbol for this is %, and the mathematical term is the modulo function. Try it out for yourself! 
+Everyone who's part of the club has a secret number. In fact, the club itself even has a secret number. These numbers are so secret that no one knows what they are or might be. They are truly random and unknown. They could be anything...
+
+Everyone, including the club, also has a public number. These are kind of like an address and everyone knows what these are. How do we create these public numbers in a way that connects them to the private numbers? Well it's easy, just multiply the club's number by it's self (exponentiation) as many times as a person's secret number, but wrap around everytime they go past 23 (like on a clock). For example: if Jim's secret number is 4, then Jim would multiple the club's public number 4 times (5 * 5 * 5 * 5), but would wrap around everytime the value was higher than 23. The symbol for this is %, and the mathematical term is the [modulo operation](https://en.wikipedia.org/wiki/Modulo_operation). Try it out for yourself! 
 ```rust,editable
 fn main() {
     
     let modulo = 23;
     let club_public_number = 5;
-    // Feel free to change Jim's secret number to anything between 1 and 23
-    let jim_secret_number = 4;
+    let jim_secret_number = 4; // 4
     
     // (b**p) % m
     // function to perform exponential modulo artithmetic 
@@ -36,8 +37,6 @@ fn main() {
     fn exp_mod(b: i32,
                p: i32,
                m: i32) -> i32 {
-               
-        // Try uncommenting the prinln!() macros to see what happens
         
         let mut out = (b * b) % m;
         //println!("0: {}", out);
@@ -45,20 +44,33 @@ fn main() {
             out = (out * b) % m;
             //println!("{}: {}", i, out);
         }
-        
         out
     }
     
+    // What's Jim's public number?
     let jim_public_number = exp_mod(club_public_number, jim_secret_number, modulo);
     println!("Jim's public number is: {}", jim_public_number);
+
+    // let's check for other numbers that could have created the same public number
+    for i in 0..1000 {
+        let alt_public_number = exp_mod(club_public_number, i, modulo);
+        if alt_public_number == jim_secret_number {
+            println!("alt secret number: {}", i);
+        }
+    }
+    
 }
 ```
 
+Now Jim has a public number (4), but no one knows what number was multiplied around the clock to get there. Could be 5\*\*4, could be 5\*\*26, could be 5\*\*136, or many others... 
 
-Now... you can't just go yelling that secret number out loud, so in there would be another secret number that Anyone  in the club would have to prove that they know. They can't say the number out loud though,  would each have a secret number. They would also have 
+Anyways, the way to check that Jim is part of the club is to do 2 things:
+- Jim multiplies the club's public number times itself as many times as his secret number
+- Whoever is in the club multiplies Jim's public number times itself as many times as the club secret number
+- They then write the numbers down on paper, fold the paper into airplanes, and throw them at each other; if the numbers match they're in.
 
+Let's try this out!
 
-Code following the wiki article: https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange
 ```rust,editable
 // TODO:
 //
@@ -133,7 +145,8 @@ fn main() {
 
 
 ### Recommend Research Resources
-- wikipedia: https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange
+- wikipedia modulo operation: https://en.wikipedia.org/wiki/Modulo_operation
+- wikipedia diffie hellman: https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange
 - computerphile colors: https://www.youtube.com/watch?v=NmM9HA2MQGI
 - computerphile modulo: https://www.youtube.com/watch?v=Yjrfm_oRO0w
 - rust playground: https://play.rust-lang.org/
