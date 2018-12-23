@@ -5,7 +5,7 @@ Note: this is a remix of this original article
 ### Hello everyone! 
 Welcome to cryptoeconomics.study’s three part tasting menu on cryptography!
 
-![cooks](https://upload.wikimedia.org/wikipedia/commons/6/65/French_Laundry_-_Kitchen_(13042489603).jpg)
+![cooks](https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F6%2F65%2FFrench_Laundry_-_Kitchen_(13042489603).jpg&f=1)
 
 Our goal is to give you a taste of how cryptoeconomic protocols work. 
 You'll come away with an understanding of the main ingredients involved in
