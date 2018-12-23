@@ -68,6 +68,8 @@ Anyways, the way to check that Jim is part of the club is to do 2 things:
 - Whoever is in the club multiplies Jim's public number times itself as many times as the club secret number
 - They then write each number down on a piece paper, fold the papers into airplanes, and throw them at each other. If the numbers match they're in.
 
+[PROBLEM: this is **really** better suited to create a number to be used as an encryption code than an authentication code]
+
 Let's try this out!
 
 ```rust,editable
