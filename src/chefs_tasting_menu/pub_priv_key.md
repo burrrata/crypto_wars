@@ -78,7 +78,7 @@ fn main() {
     let a_public = exp_mod(base, a_private, modulus);    
     let b_public = exp_mod(base, b_private, modulus);
 
-    // Let's Check To See If It Worked
+    // Let's Check To See If It Worked!
     let to_a_from_b = exp_mod(b_public, a_private, modulus);
     let to_b_from_a = exp_mod(a_public, b_private, modulus);
     assert_eq!(to_a_from_b, to_b_from_a);
@@ -93,3 +93,4 @@ fn main() {
 - wikipedia: https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange
 - computerphile colors: https://www.youtube.com/watch?v=NmM9HA2MQGI
 - computerphile modulo: https://www.youtube.com/watch?v=Yjrfm_oRO0w
+- rust playground: https://play.rust-lang.org/
