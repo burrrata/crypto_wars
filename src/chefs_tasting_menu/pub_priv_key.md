@@ -9,13 +9,56 @@ Note: this is a remix of this original article
 
 Back in the day, for most of human history, if someone wanted to communicate securely they had to either be in the same place at the same time, or use a shared secret code to encrypt and decrypt messages. This was problematic because in order to agree on and share a secret code you had first meet in person, and then if you changed your mind or someone broke your code you'd have to meet up again to agree to a new scheme. Not practical in a 24/7 globally connected digital world. Fortunately for us, a few guys named Merkle, Diffie, and Hellman came up with some pretty cool ideas on how to securely share private data over public networks. Let's see how that works...
 
-Let's say that 2 friends named Alice and Bob want to start their own secret club. Of course, like with every secret club, there needs to be a secret way to prove that you're part of the secret club. To make things more difficult... Alice and Bob don't have a clubhouse so they hangout in the school yard with all the other kids. This means that if they reveal that they have a secret club in the open, everyone will know! This wouldn't be that big of a deal, but there's this chick named Eve who believes that the world should have no secrets, and especially no secret clubs. Why? We'll never know, but she doesn't hangout with the other kids; she hangs out at the highest point on the playground, always watching... She's an odd one      ¯\\_(ツ)_/¯
+!(treehouse)[https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fi.huffpost.com%2Fgen%2F804469%2Fimages%2Fo-COOL-TREEHOUSE-DESIGNS-facebook.jpg&f=1]
 
-Anyways, Alice and Bob come up with a plan... First they try using [secret colors](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange) because that seems to be [what everyone else is doing](https://www.youtube.com/watch?v=NmM9HA2MQGI), but when they try it out in practice it turns out that everything just turns brown, and who wants to live in a world that's all brown? Requiring a practical solution, Alice and Bob press on, and on one dismal afternoon, while staring at the clock, waiting, for school, to be over... they get an idea! A big one! What if instead of using colors, they used numbers, but instead of using any random numbers, they used numbers that wrap around [like a clock does](https://www.youtube.com/watch?v=Yjrfm_oRO0w)?
+Let's say that 2 friends named Alice and Bob build a treeshouse. Like any kids with a treehouse, they started a secret club. Like with every secret club, there needs to be a secret way to prove that you're part of the secret club. Normally there would be a cool passphrase or knock that you would yell to have the rope thrown down, but... this means that anyone nearby could learn their secret code! This wouldn't be that big of a deal, but there's this chick named Eve who believes that the world should have no secrets, and especially no secret clubs. Why? We'll never know, but she's always watching... and whenever she learns anything she posts it on the school bulletin board for everyone to know. Now Timmy has a daily panic attack when people put bugs in his desk and Sarah has to wear ear plugs incase anyone utters a palindrome, and they often do. Needless to say, if everyone knew the clubs secret code it would be a disaster ¯\\_(ツ)_/¯
 
-How would this work?! Well... Alice and Bob (or anyone else in the club) would each have a secret number. They would also have 
-- following the wiki article: https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange
+[there needs to be a better segue into this]
+So, Alice and Bob come up with a plan... First they try using [secret colors](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange) because that seems to be [what everyone else is doing](https://www.youtube.com/watch?v=NmM9HA2MQGI), but when they try it out in practice everything just turns brown. This means anyone could just mix all the colors together to produce brown without knowing Alice and Bob's secret color, and still get into their club. Not cool, and besides, who wants to live in a world that's all brown? Requiring a practical solution, Alice and Bob press on, and on one dismal afternoon, while staring at the clock, waiting, for school, to be over... they get an idea! A big one! What if instead of using colors, they used numbers, but instead of using any random numbers, they used numbers that wrap around [like a clock does](https://www.youtube.com/watch?v=Yjrfm_oRO0w)?
 
+How would this work?! 
+
+Well... first numbers would work like clocks in that if you go past the maximum they just wrap around again. In this case we're using a 24hrs clock that wraps around after 23. Second, the club needs a number. [TODO: explain primitive root modulo stuff here] After much consideration Alice and Bobs decide that the number shall be 5, and 5 shall be the number. They tell everyone. 5 club is lit af. Everyone wants in, esp Eve... 
+
+In order to keep things secret, everyone who's part of the club also has a secret number. Inside the secret club is a secret list of all the secret members and their secret numbers. If someone wants to get into the club, they can't just go about saying their secret numbers out loud though, so they create public numbers that everyone can see. How do they do this? Well it's easy, just multiply the club's public number by it's self (exponentiation) as many times as a person's secret number, but wrap around everytime they go past 23 (like on a clock). For example: if Jim's secret number is 4, then Jim would multiple the club's public number 4 times (5 * 5 * 5 * 5), but would wrap around everytime the value was higher than 23. The symbol for this is %, and the mathematical term is the modulo function. Try it out for yourself! 
+```rust,editable
+fn main() {
+    
+    let modulo = 23;
+    let club_public_number = 5;
+    // Feel free to change Jim's secret number to anything between 1 and 23
+    let jim_secret_number = 4;
+    
+    // (b**p) % m
+    // function to perform exponential modulo artithmetic 
+    // because rust makes exponential multiplication with 
+    // i32 a real bother
+    fn exp_mod(b: i32,
+               p: i32,
+               m: i32) -> i32 {
+               
+        // Try uncommenting the prinln!() macros to see what happens
+        
+        let mut out = (b * b) % m;
+        //println!("0: {}", out);
+        for i in 1..p-1 { //because the first iter of out took 2 off the base
+            out = (out * b) % m;
+            //println!("{}: {}", i, out);
+        }
+        
+        out
+    }
+    
+    let jim_public_number = exp_mod(club_public_number, jim_secret_number, modulo);
+    println!("Jim's public number is: {}", jim_public_number);
+}
+```
+
+
+Now... you can't just go yelling that secret number out loud, so in there would be another secret number that Anyone  in the club would have to prove that they know. They can't say the number out loud though,  would each have a secret number. They would also have 
+
+
+Code following the wiki article: https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange
 ```rust,editable
 // TODO:
 //
