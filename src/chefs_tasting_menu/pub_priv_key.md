@@ -14,3 +14,10 @@ Let's say that 2 friends named Alice and Bob want to start their own secret club
 Anyways, Alice and Bob come up with a plan... First they try using [secret colors](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange) because that seems to be [what everyone else is doing](https://www.youtube.com/watch?v=NmM9HA2MQGI), but when they try it out in practice it turns out that everything just turns brown (to shit). And who wants to live in a world that's all brown (shit)? Requiring a practical solution, Alice and Bob press on, and on one dismal afternoon while staring at the clock waiting for school to be over, the get hit by an idea! A big one! What if instead of using colors, they used numbers, but instead of using any random numbers, they used numbers that wrap around [like a clock does](https://www.youtube.com/watch?v=Yjrfm_oRO0w)?
 
 How would this work?! Well... Alice and Bob (or anyone else in the club) would each have a secret number 
+
+
+
+### Recommend Research Resources
+- wikipedia: https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange
+- computerphile colors: https://www.youtube.com/watch?v=NmM9HA2MQGI
+- computerphile modulo: https://www.youtube.com/watch?v=Yjrfm_oRO0w
