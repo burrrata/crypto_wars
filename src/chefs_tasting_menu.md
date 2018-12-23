@@ -1,10 +1,9 @@
 # Hello everyone! 
 
-Welcome to the tasting menu :)
-
-Our goal is to give you a taste of how some of the common cryptography used in cryptoeconomic protocols work. 
+Thank you for exploring our tasting menu! 
+Our goal is to wet your appetite and give you a taste of some of the commonly used cryptography in cryptoeconomic protocols. 
 You'll come away with an understanding of the main ingredients involved in
-cryptoeconomic blockchain protocols as well as an appreciate for best practices. 
+cryptoeconomic blockchain protocols as well as an appreciate for best practices and why they matter. 
 While this course won't make you a master chef, we'll arm you with the resources to get started. 
 If you're hungry and want to learn more, at the end of each course we provide links to more resources 
 and... (drumroll) a [cookbook](https://burrrata.github.io/the_cryptoeconomics_cookbook/) is in the works :)
