@@ -111,8 +111,12 @@ fn main() {
 }
 ```
 
-Now you're probably wondering: "Isn't that a bit convoluted? I mean they could just have a list of people's names and then look out the window and see if that person is the person on the list!" Yes... they **could**, but what about on Halloween when everyone's wearing costumes, or at night when it's dark, or during they day when they're bored? These are the questions that keep me up at night, and apparently Alice and Bob feel the same way.
+Now you're probably wondering: "Isn't that a bit convoluted? I mean they could just have a list of people's names and then look out the window and see if that person is the person on the list!" Yes... they **could**, but what about on Halloween when everyone's wearing costumes, or at night when it's dark, or during they day when they're bored? These are the questions that keep me up at night, and apparently Alice and Bob feel the same way. Now they can have their secret club with secret numbers and all Eve knows is that whenever she tries to say random numbers she can't get it. Yay!
 
+Notes:
+- These children live in a magical land where a witch put a curse on the treehouse and what happens at the treehouse stays in the treehouse, including memory of the club's secret number.
+- Don't be like Eve trying to live off of the fumes of other people's lives. Get a hobby, get some friends, and leave everyone else alone :)
+- Treehouses are cool. You honestly might be better off going outside and hangingout in a tree than reading this tutorial. Too late now, but next time...
 
 <hr>
 
