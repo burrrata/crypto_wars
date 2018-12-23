@@ -23,8 +23,8 @@ How would this work?! Well... Alice and Bob (or anyone else in the club) would e
 fn main() {
  
     // (b**p) % m
-    // rust makes exponential multiplication with i32 hard
-    // but hopefully this shed some more light on exactly what's going on
+    // rust makes exponential multiplication with i32 a real bother
+    // but hopefully this sheds some more light on exactly what's going on
     // feel free to uncomment the println!() macros to see for yourself! :)
     fn exp_mod(b: i32,
                p: i32,
