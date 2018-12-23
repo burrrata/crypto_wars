@@ -32,3 +32,4 @@ pseudo "random" numbers,
 TODO: 
 - menu style theme
 - font in the style of the French Laundry
+![menu](https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.tienchiu.com%2Fwp-content%2Fuploads%2F2011%2F06%2FFrench-Laundry-menu.jpg&f=1)
