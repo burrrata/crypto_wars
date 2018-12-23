@@ -53,10 +53,8 @@ fn main() {
     let base = 5;
     let modulus = 23;
 
-    // Alice's Private Key
+    // Alice and Bob's Private Keys
     let a_private = 4;
- 
-    // Bob's Private Key
     let b_private = 3;
     
     // Function to perform exponential modulo artithmetic 
