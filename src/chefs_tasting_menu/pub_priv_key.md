@@ -2,7 +2,7 @@ Note: this is a remix of this original article
 - https://medium.com/crypto-economics/introduction-to-cryptography-part-1-646893e87d5d
 
 
-### Hello everyone! 
+# Hello everyone! 
 Welcome to cryptoeconomics.study’s three part tasting menu on cryptography!
 
 ![cooks](https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F6%2F65%2FFrench_Laundry_-_Kitchen_(13042489603).jpg&f=1)
