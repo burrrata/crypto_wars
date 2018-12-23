@@ -93,7 +93,7 @@ fn main() {
     }
     
     // Jim's Numbers
-    let jim_secret_number = 4; // 4
+    let jim_secret_number = 4;
     let jim_public_number = exp_mod(club_base_number, jim_secret_number, modulo); // 4
 
     // The Club's Numbers
@@ -101,10 +101,9 @@ fn main() {
     let club_public_number = exp_mod(club_base_number, club_secret_number, modulo); // 9
     
     // Let's check to see if Jim is a member of the club
-    let jim_auth_number = exp_mod(club_public_number, jim_secret_number, modulo);
-    let club_auth_number = exp_mod(jim_public_number, club_secret_number, modulo);
+    let jim_auth_number = exp_mod(club_public_number, jim_secret_number, modulo); // 6
+    let club_auth_number = exp_mod(jim_public_number, club_secret_number, modulo); // 6
     assert_eq!(jim_auth_number, club_auth_number);
-    println!("Success! Welcome aboard Jim!");
     println!("Jim's authentication number: {}", jim_auth_number);
     println!("The club's authentication number for Jim: {}", club_auth_number);
     
@@ -118,7 +117,9 @@ Notes:
 - Don't be like Eve trying to live off of the fumes of other people's lives. Get a hobby, get some friends, and leave everyone else alone :)
 - Treehouses are cool. You honestly might be better off going outside and hangingout in a tree than reading this tutorial. Too late now, but next time...
 
+<br>
 <hr>
+<br>
 
 ### TODO
 - make sure that there are no trailing references to the Club Public Number when it should be the Club Base Number which is 5.
