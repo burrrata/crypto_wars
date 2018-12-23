@@ -1,4 +1,4 @@
-# Cryptoeconomics.study Chef's Tasting Menu
+# Chef's Tasting Menu
 
 <hr>
 
@@ -16,8 +16,9 @@ one-way trap doors, avalanche effects, and hash functions
 pseudo "random" numbers, 
 
 <hr>
+<hr>
+<hr>
 
-
-TODO: 
+# TODO: 
 - menu style theme
 - font in the style of the French Laundry
