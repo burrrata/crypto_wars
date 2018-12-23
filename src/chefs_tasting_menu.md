@@ -15,27 +15,21 @@ and... (drumroll) a [cookbook](https://burrrata.github.io/the_cryptoeconomics_co
 # Chef's Tasting Menu
 
 ### part 1: A New Club
-// Alice and Bob build a treehouse. Like anyone with
-// a treehouse they start a secret club. Eve wants to
-// unmask their passphrase though so they create an
-// elaborate code to keep it secret.
+Alice and Bob build a treehouse. Like anyone with a treehouse they start a secret club. Eve wants to unmask their passphrase though so they create an elaborate code to keep it secret.
 
 <hr>
 
 ### part 2: Eve Strikes Back
-// Eve uses cryptanalysis to unscramble the messages and 
-// decrypt the code
+Eve uses cryptanalysis to unscramble the messages and decrypt Alice and Bob's codes and passphrase. Everyone knows and the club is in shambles! What to do?!
 
 <hr>
 
 ### part 3: Return of the Code
-// we can explain why the current scrambling technique is flawed 
-// and explore better mechanisms for 1way hashing and message 
-// authentication (content addressing, avalanche functions, etc...)
+Thrwarted by Eve, Alice and Bob hunker down in the playground and come up with new ideas, and find new hope. Will they finally be able to create thier club? Will this become even more useful than they thought?! We will find out... (content addressing, avalanche functions, etc...)
 
 <hr>
 
 TODO: 
-- menu style theme
-- font in the style of the French Laundry
+- How does the tasting menu / chef theme work with the star wars themes? Does the inconsistency even matter? 
+- theme: menu with font in the style of the French Laundry
 ![menu](https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.tienchiu.com%2Fwp-content%2Fuploads%2F2011%2F06%2FFrench-Laundry-menu.jpg&f=1)
