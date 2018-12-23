@@ -11,15 +11,21 @@ Back in the day, for most of human history, if someone wanted to communicate sec
 
 ![treehouse](https://i.huffpost.com/gen/804469/images/o-COOL-TREEHOUSE-DESIGNS-facebook.jpg)
 
-Let's say that 2 friends named Alice and Bob build a treeshouse. Like any kids with a treehouse, they started a secret club. Like with every secret club, there needs to be a secret way to prove that you're part of the secret club. Normally there would be a cool passphrase or knock that you would yell to have the rope thrown down, but... this means that anyone nearby could learn their secret code! This wouldn't be that big of a deal, but there's this chick named Eve who believes that the world should have no secrets, and especially no secret clubs. Why? We'll never know, but she's always watching... and whenever she learns anything she posts it on the school bulletin board for everyone to know. Now Timmy has a daily panic attack when people put bugs in his desk and Sarah has to wear ear plugs incase anyone utters a palindrome, and they often do. Needless to say, if everyone knew the clubs secret code it would be a disaster ¯\\_(ツ)_/¯
+Let's say that 2 friends named Alice and Bob build a treeshouse. Like any kids with a treehouse, they started a secret club. Like every secret club, there needs to be a secret way to prove that you're part of the secret club. Normally there would just be a cool passphrase or knock that you would yell to have the rope thrown down, but... this means that anyone nearby could learn their secret code! This wouldn't be that big of a deal, but there's this chick named Eve who believes that the world should have no secrets, and especially no secret clubs. Why? We'll never know, but she's always watching... and whenever she learns anything she posts it on the school bulletin board for everyone to know. Now Timmy has a daily panic attack when people put bugs in his desk and Sarah has to wear ear plugs incase anyone utters a palindrome, and they often do. Needless to say, if everyone knew the clubs secret code it would be a disaster ¯\\_(ツ)_/¯
 
-So, Alice and Bob come up with a plan... First they try using [secret colors](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange) to prove that they're members of the club (because that seems to be [what everyone else is doing](https://www.youtube.com/watch?v=NmM9HA2MQGI)), but when they try it out everything just turns brown. This means anyone could just mix all the colors together to produce brown without actually knowing Alice and Bob's secret colors! Not cool, and besides, who wants to live in a world where everything's brown? Requiring a practical solution, Alice and Bob press on, and on one dismal afternoon, while staring at the clock, waiting, for school, to be over... they get an idea! A big one! What if instead of using colors, they used numbers, but instead of using any random numbers, they used numbers that wrap around [like a clock does](https://www.youtube.com/watch?v=Yjrfm_oRO0w)?
+So, Alice and Bob come up with a plan... First they thought about using [secret colors](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange) because that seems to be [what everyone else is doing](https://www.youtube.com/watch?v=NmM9HA2MQGI), but when they tried it out everything just turns brown. This means anyone could just mix all the colors together to produce brown without actually knowing Alice and Bob's secret colors! Not cool, and besides, who wants to live in a world where everything's brown? Requiring a practical solution, Alice and Bob press on, and on one dismal afternoon, while staring at the clock, waiting, for school, to be over... they get an idea! A big one! What if instead of using colors, they used numbers, but instead of using any random numbers, they used numbers that wrap around [like a clock does](https://www.youtube.com/watch?v=Yjrfm_oRO0w)?
 
-How would this work?! 
+How would this help them share and verify the secret passphrase without Eve knowing?! 
 
-Well... the numbers would work like clocks in that if you go past the maximum they just wrap around again. In this case we're using a 24hrs clock that wraps around after 23. Also, the club needs a number. [TODO: explain primitive root modulo stuff here] After much consideration Alice and Bobs decide that the number shall be 5, and 5 shall be the number. They tell everyone. 5 club is lit af. Everyone wants in, esp Eve... 
+```TODO: explain primitive root modulo stuff linking 5 to 23```
 
-Everyone who's part of the club has a secret number. In fact, the club itself even has a secret number. These numbers are so secret that no one knows what they are or might be. They are truly random and unknown. They could be anything...
+First, the club gets a number. After much consideration Alice and Bob decide that the number shall be 5, and 5 shall be the number. They tell everyone. 5 club is lit af. Everyone wants in, esp Eve... 
+
+Then, the club gets a secret passphrase. At first only Alice and Bob know it, but as well all know, 5 club is lit af so soon more people join. They all know the passphrase, but they can't say it out loud because Eve could be anywhere anytime, always watching... This is truly annoying.
+
+To get around this unfortunate dilema, Alice and Bob create a number system where, like clocks, the numbers wrap around if you go past the maximum number. In this case we're using a 24hrs clock that wraps around after 23. 
+
+Also, evryone who's part of the club has a secret number. In fact, the club itself even has a secret number. These numbers are so secret that no one knows what they are or might be. They are truly random and unknown. They could be anything...
 
 Everyone, including the club, also has a public number. These are kind of like an address and everyone knows what these are. How do we create these public numbers in a way that connects them to the private numbers? Well it's easy, just multiply the club's number by it's self (exponentiation) as many times as a person's secret number, but wrap around everytime they go past 23 (like on a clock). For example: if Jim's secret number is 4, then Jim would multiple the club's public number 4 times (5 * 5 * 5 * 5), but would wrap around everytime the value was higher than 23. The symbol for this is %, and the mathematical term is the [modulo operation](https://en.wikipedia.org/wiki/Modulo_operation). Try it out for yourself! 
 ```rust,editable
@@ -66,23 +72,23 @@ Now Jim has a public number (4), but no one knows what number was multiplied aro
 Anyways, the way to check that Jim is part of the club is to do 2 things:
 - Jim multiplies the club's public number times itself as many times as his secret number
 - Whoever is in the club multiplies Jim's public number times itself as many times as the club secret number
-- They then write each number down on a piece paper, fold the papers into airplanes, and throw them at each other. If the numbers match they're in.
-
-```
-// PROBLEM: this is **really** better suited to create a number to be used as an encryption code than an authentication code
-// What if we keep the same story, except that...
-// the club DOES have a secret passphrase, but the
-// kids have to encrypt and decrypt that passphrase
-// using diffie-hellman pub/priv keys in order to 
-// keep eve from hearing it
-// and this works because everytime someone says
-// the passphrase it's scrambled differently according
-// to their public/private keys! 
-```
+- They then write each number down on a piece paper, fold the papers into airplanes, and throw them at each other. Now both Jim and the people in the club have a shared secret that no one else knows that they can use to scramble and unscramble the secret passphrase!
+- Jim scrambles every letter in the passphrase forward by the shared secret number.
+- Jim then proceeds to yell that new series of letters out loud.
+- Whoever is in the club writes down those letters, then shifts them backwards by the amount of the shared secret number.
+- If it reveals the passphrase, Jim is in!
+- Also, even though Eve is creeping in the bushes nearby, everyone who yells a scrambled passphrase to get in yells a different one because it's scrambled based on their unique numbers!
+- Eve tries again and again to yell random passphrases but it doesn't work. Horray! 
 
 Let's try this out!
 
 ```rust,editable
+
+// TODO:
+// - add a string for the passphrase
+// - add a function to scramble the passphrase
+// - add a function that simulates Eve's futile guessing
+
 fn main() {
     
     // Club Parameters
