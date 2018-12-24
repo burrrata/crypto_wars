@@ -1,4 +1,6 @@
-# Return of the Code
+<p align="center">
+  <img src="https://fontmeme.com/temporary/2fff75811232a63155fb5caf857c4cec.png">
+</p>
 
 ## Overall Theme / Main Takeaway
 - learn from best practices and use established and audited protocols and libraries when dealing with sensitive and valuable data.
