@@ -221,9 +221,9 @@ Find out in part 2: [Eve Strikes Back!](https://github.com/burrrata/the_cryptoec
 ### Recommend Research Resources
 - wikipedia modulo operation: https://en.wikipedia.org/wiki/Modulo_operation
 - wikipedia diffie hellman: https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange
-- computerphile colors: https://www.youtube.com/watch?v=NmM9HA2MQGI
-- computerphile modulo: https://www.youtube.com/watch?v=Yjrfm_oRO0w
-- rust playground: https://play.rust-lang.org/
+- computerphile explains diffie hellman with colors: https://www.youtube.com/watch?v=NmM9HA2MQGI
+- computerphile explains diffie hellman with modulo operations: https://www.youtube.com/watch?v=Yjrfm_oRO0w
+- the rust playground: https://play.rust-lang.org/
 
 Code that follows the diffie hellman wikipedia article. Feel free to edit and play around with it here, or copypasta into the [Rust Playground](https://play.rust-lang.org/)
 ```rust,editable
@@ -289,22 +289,8 @@ fn main() {
 <br>
 <br>
 
-### Notes:
-- These children live in a magical land where a witch put a curse on the treehouse and what happens at the treehouse stays in the treehouse, including memory of the club's secret number.
-- Don't be like Eve trying to live off of the fumes of other people's lives. Get a hobby, get some friends, and leave everyone else alone :)
-- Treehouses are cool. You honestly might be better off going outside and hangingout in a tree than reading this tutorial. Too late now, but next time...
+### TODOS
 
-### TODO
-// - add a string for the passphrase
-// - add a function to scramble the passphrase
-// - add a function that simulates Eve's futile guessing
-
-// also todo: 
-// it would be nice to iterate through chars instead of vecs
-// but I'm in brainstorming mode and vecs work everytime while chars
-// are temperamental
-
-// yet another todo: 
 // it would be nice to iterate through chars instead of vecs
 // but I'm in brainstorming mode and vecs work everytime while chars
 // are temperamental
@@ -316,8 +302,3 @@ fn main() {
 // to minimize vocabulary juggling and manitain relevance in the context of public private key crypto, search and replace: 
 // - number => key
 // - secret => private
-
-
-<br>
-
-
