@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://fontmeme.com/temporary/b761cf564858012045e0e999012d87d7.png">
+  <img src="crypto wars.png">
   <img src="crypto_wars_intro.png">
   <img src="crypto_wars_intro_text.png">
   <img src="galaxy.png">
