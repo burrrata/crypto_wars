@@ -2,4 +2,6 @@
 
 a cookbook to build fresh and tasty cryptoeconomic protocols
 
-or... a rip off of the story arch of star wars applied to our friends Alice, Bob, and Eve
+or... 
+
+a blatant rip off of the star wars story arch applied to our friends Alice, Bob, and Eve
