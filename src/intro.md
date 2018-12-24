@@ -1,7 +1,5 @@
 ![Crypto Wars](https://fontmeme.com/temporary/b761cf564858012045e0e999012d87d7.png)
 
-<hr>
-
 ![crypto_wars_intro](crypto_wars_intro.png)
 
 ![crypto_wars_intro_text](crypto_wars_intro_text.png)
