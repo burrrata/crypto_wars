@@ -2,7 +2,7 @@
 
 ### Attacks for part 2:
 
-Overall theme / main takeaway: 
+Overall Theme / Main Takeaway: 
 - don't roll your own crypto like Alice and Bob did 👍
 
 Concepts to Cover:
@@ -11,9 +11,15 @@ Concepts to Cover:
 - things that are hard to guess for humans vs computers (demo a brute force cracking attack) (stretch goal: a social engineered cracking attack based on Alice and Bob's favorite things)
 - social engineering via publicly available security questions and 
 
+Story Arch:
+- Eve learns the dark arts of cryptanalysis and social engineering. Meanwhile Alice and Bob are enjoying their club so much that they get tired of doing all the work of checking and doing the protocol they implimented. Since Eve hasn't attacked in a while anyways, they oursource verification to Alice's little brother in exchange for a chocolate bar every other friday. Alice's mom is a strict vegan health nut so this is a big deal for her little brother.
+- Eve completely pwns Alice and Bob in various ways: first intercepting messages and using brute force attacks and cryptanalysis to uncover the secret messages, then by sending false information between club memeber to create drama and upset, and then by bribing Alice's little brother with a Snickers bar to give her access to the secret master keys. 
+- Alice and Bob are forced to abandon the treehouse because it becomes untenable and overrun with field trips from CS schools warning of the perrils of rolling your own crypto.
+
+
 ### Upgrades for part 3:
 
-Overall theme / main takeaway: 
+Overall Theme / Main Takeaway: 
 - learn from best practices and use established and audited protocols and libraries when dealing with sensitive and valuable data.
 
 Concepts to Cover:
@@ -21,6 +27,11 @@ Concepts to Cover:
 - length > complexity and computation time in big O notation => show why using larger primes is essential as well as how to determine the theoretic/computational security guarantees of a protocol (but how large of computations can the Rust Playground or mdBook handle?)
 - 2FA > security questions (or randomized answers to security questions)
 
+Story Arch:
+- Alice and Bob strike back!
+- They learn best practices in crypto such as: don't roll your own crypto, use audited code and protocols, don't reuse passphrases or keys, don't let other people hold/control your keys, don't use a centralized processor to manage security or data access.
+- They use Alice's little brother as a honeypot to catch Eve red handed manipulating the old codes
+- They impliment a newer better protocol impressing all the CS professors who used to laugh at them, and Eve is banned from learning any more trickery in the computer lab. (might be better if she was permanently vanquished or converted to an ally than just being censored?)
 
 ```rust,editable
 // PART 2: Eve Strikes Back!
