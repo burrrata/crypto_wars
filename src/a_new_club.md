@@ -244,7 +244,7 @@ Everyone celebrates and lives happily ever after, or do they... While Alice and 
 - [Computerphile: diffie hellman with modulo operations](https://www.youtube.com/watch?v=Yjrfm_oRO0w)
 - [The Rust Playground](https://play.rust-lang.org/)
 
-Rust code that follows along with the diffie hellman wikipedia article. Feel free to edit and play around with it here, or copypasta into the [Rust Playground](https://play.rust-lang.org/)
+Rust code that follows along with the [diffie hellman wikipedia article](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange). Feel free to edit and play around with it here, or copypasta into the [Rust Playground](https://play.rust-lang.org/)
 ```rust,editable
 // TODO: add an explanation for primitive Root Modulo Stuff
 // - the base is a primitive root modulo
