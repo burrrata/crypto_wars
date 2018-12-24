@@ -229,10 +229,24 @@ Notes:
 <br>
 <hr>
 <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 ### TODO
 - make sure that there are no trailing references to the Club Public Number when it should be the Club Base Number which is 5.
 - is it confusing that Jim's public number is the same as his private number, even though the modulo stuff is explained and demonstrated?
+- to minimize vocabulary juggling and manitain relevance in the context of public private key crypto: number => key, secret => private
+
+<br>
 
 ### Recommend Research Resources
 - wikipedia modulo operation: https://en.wikipedia.org/wiki/Modulo_operation
@@ -240,6 +254,8 @@ Notes:
 - computerphile colors: https://www.youtube.com/watch?v=NmM9HA2MQGI
 - computerphile modulo: https://www.youtube.com/watch?v=Yjrfm_oRO0w
 - rust playground: https://play.rust-lang.org/
+
+<br>
 
 ### old code that follows the wikipedia article
 ```rust,editable
