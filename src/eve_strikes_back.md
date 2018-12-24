@@ -1,29 +1,33 @@
 # Eve Strikes Back
 
-### Attacks for part 2:
-
-Overall Theme / Main Takeaway: 
+### Overall Theme / Main Takeaway: 
 - don't roll your own crypto like Alice and Bob did 👍
 
-Concepts to Cover:
+### Concepts to Cover:
 - man in the middle attacks => spoofing, rerouting, or crypanalysis of scrambled messages
 - rate limiting to prevent online brute force attacks (does not prevent captured messages via MIM attacks and offline hash cracking via rainbow tables or hashcat)
 - randomness (Alice and Bob use the same keys every time, so Eve can perform cryptanalysis)
 - things that are hard to guess for humans vs computers (demo a brute force cracking attack) (stretch goal: a social engineered cracking attack based on Alice and Bob's favorite things)
 - social engineering via publicly available security questions and 
 
-Story Arch:
-- Eve learns the dark arts of cryptanalysis and social engineering. Meanwhile Alice and Bob are enjoying their club so much that they get tired of doing all the work of checking and doing the protocol they implimented. Since Eve hasn't attacked in a while anyways, they oursource verification to Alice's little brother in exchange for a chocolate bar every other friday. Alice's mom is a strict vegan health nut so this is a big deal for her little brother.
+### Story Arch:
+
+P1) A blessing in disguise: 
+- Eve learns the dark arts of cryptanalysis and social engineering (HOW? She was traveling and one of her bags was lost for months. She needed to get back into her accounts but had no way to access the passwords and codes that were securely stored in her checked bag. Desperate, she tried everything and, with the help of her friend Mal, learned how to break into her own accounts. Thinking it through, she wondered if the same tactics could help her infultrate Alice and Bob's now super popular club?). Meanwhile Alice and Bob are enjoying their club so much that they get tired of doing all the work of checking and doing the protocol they implimented. Since Eve hasn't attacked in a while anyways, they oursource verification to Alice's little brother in exchange for a chocolate bar every other friday. Alice's mom is a strict vegan health nut so this is a big deal for her little brother.
+
+P2) The Final Attack:
 - Eve completely [pwns](https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fa.abcnews.com%2Fimages%2FUS%2F160112_vod_orig_ice%2520_mixdown_16x9_992.jpg&f=1) Alice and Bob in various ways: first intercepting messages and using brute force attacks and cryptanalysis to uncover the secret messages (Alice's little brother was only told to follow the protocol, so Eve can just hangout and try guess after guess with no penalties lol), then by sending false information between club memeber to create drama and upset, and then by bribing Alice's little brother with a Snickers bar to give her access to the secret master keys. 
-- Alice and Bob are forced to abandon the treehouse because it becomes untenable and overrun with field trips from CS schools warning students of the perrils of rolling your own crypto.
+
+P3) Free At Last?
+- Alice and Bob are forced to abandon the treehouse because it becomes untenable and overrun with field trips from CS schools warning students of the perrils of rolling your own crypto. They've think they've lost everything, but they still have each other. 
 
 
-### Upgrades for part 3:
+# Upgrades for part 3:
 
-Overall Theme / Main Takeaway: 
+### Overall Theme / Main Takeaway: 
 - learn from best practices and use established and audited protocols and libraries when dealing with sensitive and valuable data.
 
-Concepts to Cover:
+### Concepts to Cover:
 - rate limiting to prevent brute force attacks
 - true randomness by rolling dice or augmenting the passphrase
 - length > complexity and computation time in big O notation => show why using larger primes is essential as well as how to determine the theoretic/computational security guarantees of a protocol (but how large of computations can the Rust Playground or mdBook handle?)
@@ -31,7 +35,7 @@ Concepts to Cover:
 - digital signatures: for content addressing/verification as well as 1 way hash functions
 - it would be cool to actually have a gif/video of an avalanche to emphasize that while you know **something** happened, you can't which piece of snow on the ground came from which place on the mountain because it's all jumbled up (and would be uniquely for every new avalanche)
 
-Story Arch:
+### Story Arch:
 - Alice and Bob strike back!
 - They learn best practices in crypto such as: don't roll your own crypto, use audited code and protocols, don't reuse passphrases or keys, don't let other people hold/control your keys, don't use a centralized processor to manage security or data access.
 - They use Alice's little brother as a honeypot to catch Eve red handed manipulating the old codes
