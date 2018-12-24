@@ -220,13 +220,13 @@ Find out in part 2: [Eve Strikes Back!](https://github.com/burrrata/the_cryptoec
 <br>
 
 ### Recommend Research Resources
-- wikipedia modulo operation: https://en.wikipedia.org/wiki/Modulo_operation
-- wikipedia diffie hellman: https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange
-- computerphile explains diffie hellman with colors: https://www.youtube.com/watch?v=NmM9HA2MQGI
-- computerphile explains diffie hellman with modulo operations: https://www.youtube.com/watch?v=Yjrfm_oRO0w
-- the rust playground: https://play.rust-lang.org/
+- [Wikipedia: modulo operation](https://en.wikipedia.org/wiki/Modulo_operation)
+- [Wikipedia: diffie hellman](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange)
+- [Computerphile: diffie hellman with colors](https://www.youtube.com/watch?v=NmM9HA2MQGI)
+- [Computerphile: diffie hellman with modulo operations](https://www.youtube.com/watch?v=Yjrfm_oRO0w)
+- [The Rust Playground](https://play.rust-lang.org/)
 
-Code that follows the diffie hellman wikipedia article. Feel free to edit and play around with it here, or copypasta into the [Rust Playground](https://play.rust-lang.org/)
+Rust code that follows along with the diffie hellman wikipedia article. Feel free to edit and play around with it here, or copypasta into the [Rust Playground](https://play.rust-lang.org/)
 ```rust,editable
 // TODO: add an explanation for primitive Root Modulo Stuff
 // - the base is a primitive root modulo
