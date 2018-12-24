@@ -22,7 +22,7 @@
 
 <br>
 
-## Story Arch
+## Story Arc
 
 ### Alice and Bob strike back!
 
