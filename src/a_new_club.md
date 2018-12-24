@@ -278,7 +278,11 @@ fn main() {
 }
 ```
 
+<br>
+
 <hr>
+
+<br>
 
 ### TODOS
 - explain primitive root modulo stuff linking 5 to 23
