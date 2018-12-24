@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="crypto_wars_logo.png">]
+  <img src="crypto_wars_logo.png">
   <img src="crypto_wars_intro.png">
   <img src="crypto_wars_intro_text.png">
   <img src="galaxy.png">
