@@ -21,7 +21,7 @@ So, Alice and Bob come up with a plan... First they thought about using [secret 
 
 ### How would this help Alice and Bob securely share the secret passphrase without Eve knowing?! 
 
-```TODO: explain primitive root modulo stuff linking 5 to 23```
+```TODO: explain [primitive root modulo](https://en.wikipedia.org/wiki/Primitive_root_modulo_n) stuff linking 5 to 23```
 
 First, the club gets a number. After much consideration Alice and Bob decide that the number shall be 5, and 5 shall be the number. They tell everyone. 5 club is lit af. Everyone wants in, esp Eve... 
 
@@ -301,7 +301,7 @@ fn main() {
 <br>
 
 ### TODOS
-- explain primitive root modulo stuff linking 5 to 23
+- explain [primitive root modulo](https://en.wikipedia.org/wiki/Primitive_root_modulo_n) stuff linking 5 to 23
 - explain how it is NOT ideal for multiple private keys to correlate to the same public key (collision!), and for larger primes this is statisticaly ~impossible.
 - is it confusing that Jim's public number is the same as his private number, even though the modulo stuff is explained and demonstrated?
 - make sure that there are no trailing references to the Club Public Number when it should be the Club Base Number which is 5.
