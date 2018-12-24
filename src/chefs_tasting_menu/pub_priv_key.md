@@ -232,6 +232,7 @@ Notes:
 
 ### TODO
 - make sure that there are no trailing references to the Club Public Number when it should be the Club Base Number which is 5.
+- is it confusing that Jim's public number is the same as his private number, even though the modulo stuff is explained and demonstrated?
 
 ### Recommend Research Resources
 - wikipedia modulo operation: https://en.wikipedia.org/wiki/Modulo_operation
