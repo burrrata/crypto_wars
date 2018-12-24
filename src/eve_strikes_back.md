@@ -26,6 +26,8 @@ Concepts to Cover:
 - true randomness by rolling dice or augmenting the passphrase
 - length > complexity and computation time in big O notation => show why using larger primes is essential as well as how to determine the theoretic/computational security guarantees of a protocol (but how large of computations can the Rust Playground or mdBook handle?)
 - 2FA > security questions (or randomized answers to security questions)
+- digital signatures: for content addressing/verification as well as 1 way hash functions
+- it would be cool to actually have a gif/video of an avalanche to emphasize that while you know **something** happened, you can't which piece of snow on the ground came from which place on the mountain because it's all jumbled up (and would be uniquely for every new avalanche)
 
 Story Arch:
 - Alice and Bob strike back!
