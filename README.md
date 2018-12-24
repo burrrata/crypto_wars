@@ -1,4 +1,4 @@
-# the_cryptoeconomics_cookbook / Crypto Wars
+# The Cryptoeconomics Cookbook / Crypto Wars
 
 [a cookbook to build fresh and tasty cryptoeconomic protocols 🍇🍋🥑🥦🥖](https://github.com/burrrata/the_cryptoeconomics_cookbook/blob/master/src/chefs_tasting_menu.md)
 
