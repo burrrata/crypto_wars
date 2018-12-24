@@ -7,7 +7,7 @@ Attacks for part 2:
 
 Upgrades for part 3:
 - true randomness by rolling dice or augmenting the passphrase
-- length > complexity and computation time in big O notation
+- length > complexity and computation time in big O notation => show why using larger primes is essential as well as how to determine the theoretic/computational security guarantees of a protocol
 - 2FA > security questions (or randomized answers to security questions)
 
 
