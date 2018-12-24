@@ -10,7 +10,7 @@
 <br>
 
 ## [A New Club](a_new_club.md)
-Alice and Bob build a treehouse. Like anyone with a treehouse they start a secret club. Eve wants to unmask their passphrase though so they create an elaborate code to keep it secret.
+Alice and Bob build a treehouse. Like anyone with a treehouse they started a secret club! Eve wants to unmask their passphrase though so they create an elaborate code to keep it secret.
 
 <br>
 
