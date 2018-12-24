@@ -164,7 +164,6 @@ fn main() {
     for i in scrambled_passphrase_vec.clone() {
         evesdropped_scrambled_passphrase.push(i);
     }
-    println!("Evesdropped scrambled passphrase: {:?}", evesdropped_scrambled_passphrase);
     
     
     // But can the Secret Club unscramble the passphrase?
