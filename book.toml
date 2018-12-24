@@ -3,3 +3,9 @@ authors = ["burrrata"]
 multilingual = false
 src = "src"
 title = "The Cryptoeconomics Cookbook"
+
+[output.html]
+mathjax-support = true
+
+[output.html.playpen]
+editable = true
