@@ -26,6 +26,7 @@ Also, everyone who's part of the club has a secret number. In fact, the club its
 
 Everyone, including the club, also has a public number. These are kind of like an address and everyone knows what these are. How do we create these public numbers in a way that connects them to the private numbers? Well it's easy, just multiply the club's number by it's self (exponentiation) as many times as a person's secret number, but wrap around everytime they go past 23 (like on a clock). For example: if Jim's secret number is 4, then Jim would multiple the club's public number 4 times (5 * 5 * 5 * 5), but would wrap around everytime the value was higher than 23. The symbol for this is %, and the mathematical term is the [modulo operation](https://en.wikipedia.org/wiki/Modulo_operation). Try it out for yourself! 
 ```rust,editable
+
 fn main() {
     
     let modulo = 23;
@@ -80,6 +81,7 @@ Anyways, the way to check that Jim is part of the club is to do 2 things:
 Let's try this out!
 
 ```rust,editable
+
 // TODO:
 // - clean up the spaghetti code
 // - add comments to explain everything
