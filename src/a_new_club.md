@@ -213,11 +213,15 @@ Now you're probably wondering: "Isn't that a bit convoluted? I mean they could j
 
 ![celebrate](https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperbrowse.com%2Fmedia%2Fimages%2Fcelebrate.jpg&f=1)
 
-Everyone celebrates and lives happily ever after, or do they... While Alice and Bob and celebrating their new club, Eve is hard at work learning about the dark art or cryptanalysis. What will she learn? How will she use it? 
+Everyone celebrates and lives happily ever after, or do they... While Alice and Bob are celebrating their new club, Eve is hard at work learning the dark art of cryptanalysis. What will she learn? How will she use it? 
 
-Find out in part 2: [Eve Strikes Back!](https://github.com/burrrata/the_cryptoeconomics_cookbook/blob/master/src/eve_strikes_back.md)
+### Find out in part 2: [Eve Strikes Back!](https://github.com/burrrata/the_cryptoeconomics_cookbook/blob/master/src/eve_strikes_back.md)
+
+<br>
 
 <hr>
+
+<br>
 
 ### Recommend Research Resources
 - [Wikipedia: modulo operation](https://en.wikipedia.org/wiki/Modulo_operation)
