@@ -1,12 +1,22 @@
 # Eve Strikes Back
 
-Attacks for part 2:
+### Attacks for part 2:
+
+Overall theme / main takeaway: 
+- don't roll your own crypto like Alice and Bob did 👍
+
+Concepts to Cover:
 - man in the middle attacks => spoofing, rerouting, or crypanalysis of scrambled messages
 - randomness (Alice and Bob use the same keys every time, so Eve can perform cryptanalysis)
 - things that are hard to guess for humans vs computers (demo a brute force cracking attack) (stretch goal: a social engineered cracking attack based on Alice and Bob's favorite things)
 - social engineering via publicly available security questions and 
 
-Upgrades for part 3:
+### Upgrades for part 3:
+
+Overall theme / main takeaway: 
+- learn from best practices and use established and audited protocols and libraries when dealing with sensitive and valuable data.
+
+Concepts to Cover:
 - true randomness by rolling dice or augmenting the passphrase
 - length > complexity and computation time in big O notation => show why using larger primes is essential as well as how to determine the theoretic/computational security guarantees of a protocol (but how large of computations can the Rust Playground or mdBook handle?)
 - 2FA > security questions (or randomized answers to security questions)
