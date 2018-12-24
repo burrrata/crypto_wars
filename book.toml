@@ -2,7 +2,7 @@
 authors = ["burrrata"]
 multilingual = false
 src = "src"
-title = "The Cryptoeconomics Cookbook"
+title = "Crypto Wars"
 
 [output.html]
 mathjax-support = true
