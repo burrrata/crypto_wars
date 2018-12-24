@@ -106,6 +106,7 @@ fn main() {
     
     // Club Parameters
     let passphrase = vec!["t", "h", "e", "p", "a", "s", "s", "w", "o", "r", "d", "i", "s", "p", "a", "s", "s", "w", "o", "r", "d"];
+    let passphrase_test = vec!["t", "h", "e", "p", "a", "s", "s", "w", "o", "r", "d", "i", "s", "p", "a", "s", "s", "w", "o", "r", "d"];
     let modulo = 23;
     let club_base_number = 5;
     
@@ -173,7 +174,14 @@ fn main() {
         (scrambled_str, scrambled_vec)
     }
     let (scrambled_passphrase_str, scrambled_passphrase_vec) = scramble(passphrase, jim_auth_number);
-    println!("scrambled passphrase: {:?}", scrambled_passphrase_str);
+    
+    // Eve is always watching...
+    //let evesdropped_scrambled_passphrase = scrambled_passphrase_vec.clone(); // rust type `std::vec::Vec<&str>`, which does not implement the `Copy` trait
+    let mut evesdropped_scrambled_passphrase = Vec::new();
+    for i in scrambled_passphrase_vec.clone() {
+        evesdropped_scrambled_passphrase.push(i);
+    }
+    println!("Evesdropped scrambled passphrase: {:?}", evesdropped_scrambled_passphrase);
     
     
     // But can the Secret Club unscramble the passphrase?
@@ -206,15 +214,44 @@ fn main() {
         (unscrambled_str, unscrambled_vec)
     }    
     let (unscrambled_passphrase_str, unscrambled_passphrase_vec) = unscramble(scrambled_passphrase_vec, club_jim_auth_number);
+    
+    
+    // Did it work?
+    assert_eq!(unscrambled_passphrase_vec, passphrase_test);
+    println!("original passphrase: {:?}", passphrase_test);
+    println!("scrambled passphrase: {:?}", scrambled_passphrase_str);
     println!("unscrambled passphrase: {:?}", unscrambled_passphrase_str);
     
     
-    // But wait! What if Eve tries to get in???
-    let eve_secret_number = 43;
-    let eve_public_number = exp_mod(club_base_number, eve_secret_number, modulo); // 14
-    let eve_auth_number = exp_mod(club_public_number, eve_secret_number, modulo); // 18
-    let club_eve_auth_number = exp_mod(eve_public_number, club_secret_number, modulo); // 
-    //println!("{}", club_eve_auth_number);
+    
+    // PART 2: Eve Strikes Back!
+    // But wait! 
+    // What if Eve hears someone saying a scrambled passphrase
+    // and then tries to use someone else's public key to unscramble it?
+    // Or what it Eve tries to pretend she's someone else using their public key?
+    let eve_public_number = jim_public_number.clone(); // 4
+    // But wait... Even with Jim's Public Key, how many times does Eve need to 
+    // multiply the Club Number by itself to find the secret key shared between Jim and The Club?
+    //let eve_secret_number = "?";
+    //let eve_auth_number = exp_mod(club_public_number, eve_secret_number, modulo);
+    
+    // Looks like Eve will have to guess
+    for i in 0..23 {
+        let eve_secret_number = i;
+        let eve_auth_number = exp_mod(club_public_number, eve_secret_number, modulo);
+        let (eve_unscrambled_passphrase_str, eve_unscrambled_passphrase_vec) = unscramble(evesdropped_scrambled_passphrase.clone(), eve_auth_number);
+        if eve_unscrambled_passphrase_vec == passphrase_test {
+            println!("Eve broke the code!");
+            println!("Secret Passphrase: {:?}", eve_unscrambled_passphrase_str);
+            println!("Secret Key: {:?}", eve_auth_number);
+        }
+    }
+    
+    // Looks like Eve is going to have to resort to social engineering to trick
+    // the club bouncer into thinking that her made up public key is legit
+    let eve_private_number = 45;
+    let eve_public_number = exp_mod(club_base_number, eve_private_number, modulo); // 5
+    let club_eve_auth_number = exp_mod(eve_public_number, club_secret_number, modulo); // 9
 
 }
 ```
