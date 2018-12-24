@@ -205,50 +205,6 @@ fn main() {
     println!("original passphrase: {:?}", passphrase_test);
     println!("scrambled passphrase: {:?}", scrambled_passphrase_str);
     println!("unscrambled passphrase: {:?}", unscrambled_passphrase_str);
-    
-    
-    
-    // Attacks and Failures
-    // - it would be great to include a framework for people
-    // - to try random values and see if they work or not
-    // - 
-    // - then create a game (with larger primes) where the secret
-    // numbers are chosen randomly you have to prove that you
-    // - know the secret number to get into the club (thus
-    // - showing how it's easy to prove if you're in the club
-    // - but much harder to break if you're not in the club)
-    // - 
-    // - then link to a real dh library in rust that explains
-    // - how to use it in practice and provides secure code
-    
-    // PART 2: Eve Strikes Back!
-    // But wait! 
-    // What if Eve hears someone saying a scrambled passphrase
-    // and then tries to use someone else's public key to unscramble it?
-    // Or what it Eve tries to pretend she's someone else using their public key?
-    let eve_public_number = jim_public_number.clone(); // 4
-    // But wait... Even with Jim's Public Key, how many times does Eve need to 
-    // multiply the Club Number by itself to find the secret key shared between Jim and The Club?
-    //let eve_secret_number = "?";
-    //let eve_auth_number = exp_mod(club_public_number, eve_secret_number, modulo);
-    
-    // Looks like Eve will have to guess
-    for i in 0..23 {
-        let eve_secret_number = i;
-        let eve_auth_number = exp_mod(club_public_number, eve_secret_number, modulo);
-        let (eve_unscrambled_passphrase_str, eve_unscrambled_passphrase_vec) = unscramble(evesdropped_scrambled_passphrase.clone(), eve_auth_number);
-        if eve_unscrambled_passphrase_vec == passphrase_test {
-            println!("Eve broke the code!");
-            println!("Secret Passphrase: {:?}", eve_unscrambled_passphrase_str);
-            println!("Secret Key: {:?}", eve_auth_number);
-        }
-    }
-    
-    // Looks like Eve is going to have to resort to social engineering to trick
-    // the club bouncer into thinking that her made up public key is legit
-    let eve_private_number = 45;
-    let eve_public_number = exp_mod(club_base_number, eve_private_number, modulo); // 5
-    let club_eve_auth_number = exp_mod(eve_public_number, club_secret_number, modulo); // 9
 
 }
 ```
