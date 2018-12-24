@@ -6,7 +6,7 @@
 
 Not so long ago in a galaxy called the Milky Way on a planet called Earth...
 
-It is a time of mischief and experimentation. Alice and Bob have successfully built a treehouse, and like anyone with a treehouse, they start a secret club. Eve hears of this will have none of it. The plot thickens... drama ensues... and neccessity, the mother of invention, forces Alice and Bob to roll their own crypto. Will it work? Will it fail? Will they iterate and learn from their mistakes? 
+It is a time of mischief and experimentation. Alice and Bob have successfully built a treehouse, and like anyone with a treehouse, they start a secret club. Eve hears of this will have none of it. The plot thickens... drama ensues... and neccessity, the mother of invention, inspires Alice and Bob to roll their own crypto. Will it work? Will it fail? Will they iterate and learn from their mistakes? 
 
 <br>
 
