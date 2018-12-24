@@ -3,7 +3,7 @@
 ## Overall Theme / Main Takeaway
 - don't roll your own crypto like Alice and Bob did 👍
 
-## Concepts to Cover
+## Concepts To Cover
 - man in the middle attacks => spoofing, rerouting, or crypanalysis of scrambled messages
 - rate limiting to prevent online brute force attacks (does not prevent captured messages via MIM attacks and offline hash cracking via rainbow tables or hashcat)
 - randomness (Alice and Bob use the same keys every time, so Eve can perform cryptanalysis)
@@ -14,7 +14,7 @@
 
 ### Keep your friends close and your enemies closer.
 
-### P1) A blessing in disguise...
+### P1) A Blessing In Disguise...
 - Eve learns the dark arts of cryptanalysis and social engineering (HOW? She was traveling and one of her bags was lost for months. She needed to get back into her accounts but had no way to access the passwords and codes that were securely stored in her checked bag. Desperate, she tried everything and, with the help of her friend Mal, learned how to break into her own accounts. Thinking it through, she wondered if the same tactics could help her infultrate Alice and Bob's now super popular club?). Meanwhile Alice and Bob are enjoying their club so much that they get tired of doing all the work of checking and doing the protocol they implimented. Since Eve hasn't attacked in a while anyways, they oursource verification to Alice's little brother in exchange for a chocolate bar every other friday. Alice's mom is a strict vegan health nut so this is a big deal for her little brother.
 
 ### P2) The Final Attack!
