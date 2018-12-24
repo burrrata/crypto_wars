@@ -237,10 +237,6 @@ Everyone celebrates and lives happily ever after, or do they... While Alice and 
 
 <br>
 
-<hr>
-
-<br>
-
 ### Recommend Research Resources
 - [Wikipedia: modulo operation](https://en.wikipedia.org/wiki/Modulo_operation)
 - [Wikipedia: diffie hellman](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange)
