@@ -6,7 +6,7 @@
 
 ![crypto_wars_intro_text](crypto_wars_intro_text.png)
 
-![space](https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Location_of_Earth_%281x9-English_Annot-small%29.png/400px-Location_of_Earth_%281x9-English_Annot-small%29.png)
+![space](galaxy.png)
 
 
 
