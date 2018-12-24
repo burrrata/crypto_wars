@@ -291,15 +291,10 @@ fn main() {
 <br>
 
 ### TODOS
-
-// it would be nice to iterate through chars instead of vecs
-// but I'm in brainstorming mode and vecs work everytime while chars
-// are temperamental
-
-// make sure that there are no trailing references to the Club Public Number when it should be the Club Base Number which is 5.
-
-// is it confusing that Jim's public number is the same as his private number, even though the modulo stuff is explained and demonstrated?
-
-// to minimize vocabulary juggling and manitain relevance in the context of public private key crypto, search and replace: 
-// - number => key
-// - secret => private
+- explain primitive root modulo stuff linking 5 to 23
+- would it be easier for people to read if we used strings and chars instead of Vecs?
+- make sure that there are no trailing references to the Club Public Number when it should be the Club Base Number which is 5.
+- is it confusing that Jim's public number is the same as his private number, even though the modulo stuff is explained and demonstrated?
+- to minimize vocabulary juggling and manitain relevance in the context of public private key crypto, search and replace: 
+    - number => key
+    - secret => private
