@@ -18,7 +18,7 @@
 
 <br>
 
-## Story Arch
+## Story Arc
 
 ### Keep your friends close and your enemies closer.
 
