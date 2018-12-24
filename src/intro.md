@@ -1,4 +1,4 @@
-# The Cryptoeconomics Cookbook
+# Crypto Wars
 
 ### part 1: A New Club
 Alice and Bob build a treehouse. Like anyone with a treehouse they start a secret club. Eve wants to unmask their passphrase though so they create an elaborate code to keep it secret.
