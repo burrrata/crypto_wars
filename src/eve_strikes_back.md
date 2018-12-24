@@ -33,6 +33,10 @@ Story Arch:
 - They use Alice's little brother as a honeypot to catch Eve red handed manipulating the old codes
 - They impliment a newer better protocol impressing all the CS professors who used to laugh at them, and Eve is banned from learning any more trickery in the computer lab. (might be better if she was permanently vanquished or converted to an ally than just being censored?)
 
+<hr>
+
+Beginnings of code building on previous concepts in part 1, and expanding to impliment Eve's various attacks :)
+
 ```rust,editable
 // PART 2: Eve Strikes Back!
 
