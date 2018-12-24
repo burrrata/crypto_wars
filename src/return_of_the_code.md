@@ -1,9 +1,9 @@
 # Return of the Code
 
-### Overall Theme / Main Takeaway: 
+## Overall Theme / Main Takeaway
 - learn from best practices and use established and audited protocols and libraries when dealing with sensitive and valuable data.
 
-### Concepts to Cover:
+## Concepts to Cover
 - the difference between psuedo random and cryptographically random numbers
 - the avalanche effect in hash functions
 - verifiable content addressing via hashes
@@ -14,7 +14,7 @@
 - digital signatures: for content addressing/verification as well as 1 way hash functions
 - it would be cool to actually have a gif/video of an avalanche to emphasize that while you know **something** happened, you can't which piece of snow on the ground came from which place on the mountain because it's all jumbled up (and would be uniquely for every new avalanche)
 
-### Story Arch:
+## Story Arch
 - Alice and Bob strike back!
 
 P1) Learning The Hard Way
