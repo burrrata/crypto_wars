@@ -3,7 +3,7 @@
 ## Overall Theme / Main Takeaway
 - learn from best practices and use established and audited protocols and libraries when dealing with sensitive and valuable data.
 
-## Concepts to Cover
+## Concepts To Cover
 - the difference between psuedo random and cryptographically random numbers
 - the avalanche effect in hash functions
 - verifiable content addressing via hashes
@@ -24,5 +24,5 @@
 ### P2) Sweet Revenge
 - They use Alice's little brother as a honeypot to catch Eve red handed manipulating the old codes
 
-### P3) Survival of the Fittest
+### P3) Survival Of The Fittest
 - They impliment a newer better protocol impressing all the CS professors who used to laugh at them, and Eve is banned from learning any more trickery in the computer lab. (might be better if she was permanently vanquished or converted to an ally than just being censored?)
