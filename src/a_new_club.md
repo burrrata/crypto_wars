@@ -85,6 +85,10 @@ Anyways, the way to check that Jim is part of the club is to do 2 things:
 Let's try this out!
 
 ```rust,editable
+// TODO:
+// - clean up the spaghetti code
+// - add comments to explain everything
+
 fn main() {
     
     
@@ -209,8 +213,13 @@ fn main() {
 }
 ```
 
-Now you're probably wondering: "Isn't that a bit convoluted? I mean they could just have a list of people's names and then look out the window and see if that person is the person on the list!" Yes... they **could**, but what about on Halloween when everyone's wearing costumes, or at night when it's dark, or during they day when they're bored? These are the questions that keep me up at night, and apparently Alice and Bob feel the same way. Now they can have their secret club with secret numbers and all Eve knows is that whenever she tries to say random numbers she can't get it. Yay!
+Now you're probably wondering: "Isn't that a bit convoluted? I mean they could just have a list of people's names and then look out the window and see if that person is the person on the list!" Yes... they **could**, but what about on Halloween when everyone's wearing costumes, or at night when it's dark, or during they day when they're bored? These are the questions that keep me up at night, and apparently Alice and Bob feel the same way. Now they can have their secret club with secret numbers and all Eve knows is that whenever she tries to guess the passphrase by saying random numbers it doesn't work. Yay!
 
+[insert celebration image]
+
+Everyone celebrates and lives happily ever after, or do they... While Alice and Bob and celebrating their new club, Eve is hard at work learning about the dark art or cryptanalysis. What will she learn? How will she use it? Find out in part 2: Eve Strikes Back!
+
+<br>
 
 ### Recommend Research Resources
 - wikipedia modulo operation: https://en.wikipedia.org/wiki/Modulo_operation
@@ -219,8 +228,7 @@ Now you're probably wondering: "Isn't that a bit convoluted? I mean they could j
 - computerphile modulo: https://www.youtube.com/watch?v=Yjrfm_oRO0w
 - rust playground: https://play.rust-lang.org/
 
-### code that follows the wikipedia article
-Feel free to edit and play around with it here, or copypasta into the [Rust Playground](https://play.rust-lang.org/)
+Code that follows the diffie hellman wikipedia article. Feel free to edit and play around with it here, or copypasta into the [Rust Playground](https://play.rust-lang.org/)
 ```rust,editable
 // TODO: add an explanation for primitive Root Modulo Stuff
 // - the base is a primitive root modulo
