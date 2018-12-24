@@ -1,11 +1,9 @@
-![Crypto Wars](https://fontmeme.com/temporary/b761cf564858012045e0e999012d87d7.png)
-
-![crypto_wars_intro](crypto_wars_intro.png)
-
-![crypto_wars_intro_text](crypto_wars_intro_text.png)
-
-![space](galaxy.png)
-
+<p align="center">
+  <img src="https://fontmeme.com/temporary/b761cf564858012045e0e999012d87d7.png">
+  <img src="crypto_wars_intro.png">
+  <img src="crypto_wars_intro_text.png">
+  <img src="galaxy.png">
+</p>
 
 
 
