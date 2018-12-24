@@ -1,9 +1,13 @@
 <p align="center">
-  <img src="https://fontmeme.com/temporary/2fff75811232a63155fb5caf857c4cec.png">
+  <img src="https://fontmeme.com/temporary/2fff75811232a63155fb5caf857c4cec.png>
 </p>
+
+<br>
 
 ## Overall Theme / Main Takeaway
 - learn from best practices and use established and audited protocols and libraries when dealing with sensitive and valuable data.
+
+<br>
 
 ## Concepts To Cover
 - the difference between psuedo random and cryptographically random numbers
@@ -15,6 +19,8 @@
 - 2FA > security questions (or randomized answers to security questions)
 - digital signatures: for content addressing/verification as well as 1 way hash functions
 - it would be cool to actually have a gif/video of an avalanche to emphasize that while you know **something** happened, you can't which piece of snow on the ground came from which place on the mountain because it's all jumbled up (and would be uniquely for every new avalanche)
+
+<br>
 
 ## Story Arch
 
@@ -28,3 +34,7 @@
 
 ### P3) Survival Of The Fittest
 - They impliment a newer better protocol impressing all the CS professors who used to laugh at them, and Eve is banned from learning any more trickery in the computer lab. (might be better if she was permanently vanquished or converted to an ally than just being censored?)
+
+
+<br>
+
