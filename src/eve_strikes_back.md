@@ -2,8 +2,12 @@
     <img src="https://fontmeme.com/temporary/84289f0a7747325c08a5627234c0bd49.png">
 </p>
 
+<br>
+
 ## Overall Theme / Main Takeaway
 - don't roll your own crypto like Alice and Bob did 👍
+
+<br>
 
 ## Concepts To Cover
 - man in the middle attacks => spoofing, rerouting, or crypanalysis of scrambled messages
@@ -11,6 +15,8 @@
 - randomness (Alice and Bob use the same keys every time, so Eve can perform cryptanalysis)
 - things that are hard to guess for humans vs computers (demo a brute force cracking attack) (stretch goal: a social engineered cracking attack based on Alice and Bob's favorite things)
 - social engineering via publicly available security questions and 
+
+<br>
 
 ## Story Arch
 
@@ -25,7 +31,11 @@
 ### P3) Free At Last?
 - Alice and Bob are forced to abandon the treehouse because it becomes untenable and overrun with field trips from CS schools warning students of the perrils of rolling your own crypto. They've think they've lost everything, but they still have each other. 
 
+<br>
+
 <hr>
+
+<br>
 
 Beginnings of code building on previous concepts in part 1, and expanding to impliment Eve's various attacks :)
 
