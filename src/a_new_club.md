@@ -64,7 +64,7 @@ fn main() {
     let jim_public_number = exp_mod(club_public_number, jim_secret_number, modulo);
     println!("Jim's public number is: {}", jim_public_number);
 
-    // let's check for other numbers that could have created the same public number
+    // let's check for other numbers that could have also created that same public number
     for i in 0..1000 {
         let alt_public_number = exp_mod(club_public_number, i, modulo);
         if alt_public_number == jim_secret_number {
@@ -302,9 +302,10 @@ fn main() {
 
 ### TODOS
 - explain primitive root modulo stuff linking 5 to 23
-- would it be easier for people to read if we used strings and chars instead of Vecs?
-- make sure that there are no trailing references to the Club Public Number when it should be the Club Base Number which is 5.
+- explain how it is NOT ideal for multiple private keys to correlate to the same public key (collision!), and for larger primes this is statisticaly ~impossible.
 - is it confusing that Jim's public number is the same as his private number, even though the modulo stuff is explained and demonstrated?
+- make sure that there are no trailing references to the Club Public Number when it should be the Club Base Number which is 5.
 - to minimize vocabulary juggling and manitain relevance in the context of public private key crypto, search and replace: 
     - number => key
     - secret => private
+- would it be easier for people to read/engage with if we used strings and chars instead of Vecs? (the passphrases would be easier to work with and it would work better for APIs or CLI applications, but the functions would be convoluted af) (a little verbose, but maybe use strings and make the functions convert the strings to Vecs and back again within the function?)
