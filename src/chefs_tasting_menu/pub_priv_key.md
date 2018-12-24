@@ -244,7 +244,7 @@ Notes:
 ### TODO
 - make sure that there are no trailing references to the Club Public Number when it should be the Club Base Number which is 5.
 - is it confusing that Jim's public number is the same as his private number, even though the modulo stuff is explained and demonstrated?
-- to minimize vocabulary juggling and manitain relevance in the context of public private key crypto: number => key, secret => private
+- to minimize vocabulary juggling and manitain relevance in the context of public private key crypto, search and replace: number => key, secret => private
 
 <br>
 
