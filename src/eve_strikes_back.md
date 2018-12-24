@@ -1,5 +1,16 @@
 # Eve Strikes Back
 
+Attacks for part 2:
+- randomness (Alice and Bob use the same keys every time, so Eve can perform cryptanalysis)
+- things that are hard to guess for humans vs computers (demo a brute force cracking attack) (stretch goal: a social engineered cracking attack based on Alice and Bob's favorite things)
+- social engineering via publicly available security questions and 
+
+Upgrades for part 3:
+- true randomness by rolling dice or augmenting the passphrase
+- length > complexity and computation time in big O notation
+- 2FA > security questions (or randomized answers to security questions)
+
+
 ```rust,editable
 // PART 2: Eve Strikes Back!
 
