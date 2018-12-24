@@ -231,7 +231,9 @@ Now you're probably wondering: "Isn't that a bit convoluted? I mean they could j
 
 Everyone celebrates and lives happily ever after, or do they... While Alice and Bob are celebrating their new club, Eve is hard at work learning the dark art of cryptanalysis. What will she learn? How will she use it? 
 
-### Find out in part 2: [Eve Strikes Back!](https://github.com/burrrata/the_cryptoeconomics_cookbook/blob/master/src/eve_strikes_back.md)
+<br>
+
+# Find out in part 2: [Eve Strikes Back!](https://github.com/burrrata/the_cryptoeconomics_cookbook/blob/master/src/eve_strikes_back.md)
 
 <br>
 
