@@ -7,13 +7,14 @@ Overall Theme / Main Takeaway:
 
 Concepts to Cover:
 - man in the middle attacks => spoofing, rerouting, or crypanalysis of scrambled messages
+- rate limiting to prevent online brute force attacks (does not prevent captured messages via MIM attacks and offline hash cracking via rainbow tables or hashcat)
 - randomness (Alice and Bob use the same keys every time, so Eve can perform cryptanalysis)
 - things that are hard to guess for humans vs computers (demo a brute force cracking attack) (stretch goal: a social engineered cracking attack based on Alice and Bob's favorite things)
 - social engineering via publicly available security questions and 
 
 Story Arch:
 - Eve learns the dark arts of cryptanalysis and social engineering. Meanwhile Alice and Bob are enjoying their club so much that they get tired of doing all the work of checking and doing the protocol they implimented. Since Eve hasn't attacked in a while anyways, they oursource verification to Alice's little brother in exchange for a chocolate bar every other friday. Alice's mom is a strict vegan health nut so this is a big deal for her little brother.
-- Eve completely [pwns](https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fa.abcnews.com%2Fimages%2FUS%2F160112_vod_orig_ice%2520_mixdown_16x9_992.jpg&f=1) Alice and Bob in various ways: first intercepting messages and using brute force attacks and cryptanalysis to uncover the secret messages, then by sending false information between club memeber to create drama and upset, and then by bribing Alice's little brother with a Snickers bar to give her access to the secret master keys. 
+- Eve completely [pwns](https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fa.abcnews.com%2Fimages%2FUS%2F160112_vod_orig_ice%2520_mixdown_16x9_992.jpg&f=1) Alice and Bob in various ways: first intercepting messages and using brute force attacks and cryptanalysis to uncover the secret messages (Alice's little brother was only told to follow the protocol, so Eve can just hangout and try guess after guess with no penalties lol), then by sending false information between club memeber to create drama and upset, and then by bribing Alice's little brother with a Snickers bar to give her access to the secret master keys. 
 - Alice and Bob are forced to abandon the treehouse because it becomes untenable and overrun with field trips from CS schools warning students of the perrils of rolling your own crypto.
 
 
@@ -23,6 +24,7 @@ Overall Theme / Main Takeaway:
 - learn from best practices and use established and audited protocols and libraries when dealing with sensitive and valuable data.
 
 Concepts to Cover:
+- rate limiting to prevent brute force attacks
 - true randomness by rolling dice or augmenting the passphrase
 - length > complexity and computation time in big O notation => show why using larger primes is essential as well as how to determine the theoretic/computational security guarantees of a protocol (but how large of computations can the Rust Playground or mdBook handle?)
 - 2FA > security questions (or randomized answers to security questions)
