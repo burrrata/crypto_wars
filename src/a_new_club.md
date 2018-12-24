@@ -1,7 +1,8 @@
-# A New Club
+<p align="center">
+    <img src="https://fontmeme.com/temporary/a96def546c5c87b5a4f0a1f6eabaadbc.png">
+</p>
 
-AKA Public Private Key Crypto
-- What is it and why should you care?
+AKA Public Private Key Crypto: What is it and why should you care?
 
 Back in the day, for most of human history, if someone wanted to communicate securely they had to either be in the same place at the same time, or use a shared secret code to encrypt and decrypt messages. This was problematic because in order to agree on and share a secret code you had first meet in person, and then if you changed your mind or someone broke your code you'd have to meet up again to agree to a new scheme. Not practical in a 24/7 globally connected digital world. Fortunately for us, a few guys named [Merkle](https://en.wikipedia.org/wiki/Ralph_Merkle), [Diffie](https://en.wikipedia.org/wiki/Whitfield_Diffie), and [Hellman](https://en.wikipedia.org/wiki/Martin_Hellman) came up with some [pretty cool ideas](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange) on how to securely share private data over public networks. 
 
