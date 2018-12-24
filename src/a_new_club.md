@@ -223,7 +223,7 @@ fn main() {
 
 <br>
 
-Now you're probably wondering: "Isn't that a bit convoluted? I mean they could just have a list of people's names and then look out the window and see if that person is the person on the list!" Yes... they **could**, but what about on Halloween when everyone's wearing costumes, or at night when it's dark, or during they day when they're bored? These are the questions that keep me up at night, and apparently Alice and Bob feel the same way. Now they can have their secret club with secret numbers and all Eve knows is that whenever she tries to guess the passphrase by saying random numbers it doesn't work. Yay!
+Now you're probably wondering: "Isn't that a bit convoluted? I mean they could just have a list of people's names and then look out the window and see if that person is the person on the list!" They **could**, but what about on Halloween when everyone's wearing costumes, or at night when it's dark, or during they day when they're bored? These are the questions that keep me up at night, and apparently Alice and Bob feel the same way. Now they can have their secret club with secret numbers and all Eve knows is that whenever she tries to guess the passphrase by saying random numbers it doesn't work. Yay!
 
 <br>
 
