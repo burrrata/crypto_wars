@@ -91,16 +91,24 @@ Let's try this out!
 // - add a function to scramble the passphrase
 // - add a function that simulates Eve's futile guessing
 
-// also todo: it would be nice to iterate through chars instead of vecs
+// also todo: 
+// it would be nice to iterate through chars instead of vecs
+// but I'm in brainstorming mode and vecs work everytime while chars
+// are temperamental
+
+// yet another todo: 
+// it would be nice to iterate through chars instead of vecs
 // but I'm in brainstorming mode and vecs work everytime while chars
 // are temperamental
 
 fn main() {
     
+    
     // Club Parameters
-    let passphrase = vec!["t", "h", "e", " ", "p", "a", "s", "s", "w", "o", "r", "d"," ", "i", "s", " ", "p", "a", "s", "s", "w", "o", "r", "d"];
+    let passphrase = vec!["t", "h", "e", "p", "a", "s", "s", "w", "o", "r", "d", "i", "s", "p", "a", "s", "s", "w", "o", "r", "d"];
     let modulo = 23;
     let club_base_number = 5;
+    
     
     // (b**p) % m
     // b = base, p = private, m = modulo
@@ -120,48 +128,85 @@ fn main() {
         out
     }
     
+    
     // Jim's Numbers
     let jim_secret_number = 4;
     let jim_public_number = exp_mod(club_base_number, jim_secret_number, modulo); // 4
-
     // The Club's Numbers
     let club_secret_number = 98;
     let club_public_number = exp_mod(club_base_number, club_secret_number, modulo); // 9
     
-    // Let's check to see if Jim is a member of the club
+    
+    // Let's create a secret key between Jim and The Club
     let jim_auth_number = exp_mod(club_public_number, jim_secret_number, modulo); // 6
     let club_jim_auth_number = exp_mod(jim_public_number, club_secret_number, modulo); // 6
     assert_eq!(jim_auth_number, club_jim_auth_number);
-    println!("Jim's authentication number: {}", jim_auth_number);
-    println!("The club's authentication number for Jim: {}", club_jim_auth_number);
-    
+
+
     // Now let's scramble the passphrase in a way that only the people in the club can unscramble!
     fn scramble(p: Vec<&str>,
-                k: i32) -> String {
+                k: i32) -> (String, Vec<&str>) {
         
         // p = passphrase
         // k = key
-        
-        let key = k as usize;
+    
         let a = vec!["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-        
+        let key = k as usize;
         let mut scrambled_vec = Vec::new();
-        for i in 0..p.len() {
-            let index = (i + key) % 24;
-            scrambled_vec.push(a[index])
+        
+        for i in p {
+            for j in 0..a.len() {
+                if i == a[j] {
+                    let alpha_index = j;
+                    let scrambled_letter = (alpha_index + key) % 26;
+                    scrambled_vec.push(a[scrambled_letter])
+                }
+            }
         }
         
         let mut scrambled_str = String::new();
-        for i in scrambled_vec {
+        let sc = scrambled_vec.clone();
+        for i in sc {
             scrambled_str.push_str(i);
         }
         
-        scrambled_str
+        (scrambled_str, scrambled_vec)
     }
-    let scrambled_passphrase = scramble(passphrase, jim_auth_number);
-    println!("scrambled passphrase: {:?}", scrambled_passphrase);
+    let (scrambled_passphrase_str, scrambled_passphrase_vec) = scramble(passphrase, jim_auth_number);
+    println!("scrambled passphrase: {:?}", scrambled_passphrase_str);
     
-    // And can the Secret Club unscramble the passphrase?
+    
+    // But can the Secret Club unscramble the passphrase?
+    fn unscramble(p: Vec<&str>,
+                  k: i32) -> (String, Vec<&str>) {
+                  
+        // p = passphrase
+        // k = key
+
+        let a = vec!["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+        let key = k as usize;
+        let mut unscrambled_vec = Vec::new();
+        
+        for i in p {
+            for j in 0..a.len() {
+                if i == a[j] {
+                    let alpha_index = j;
+                    let unscrambled_letter = (26 + alpha_index - key) % 26;
+                    unscrambled_vec.push(a[unscrambled_letter])
+                }
+            }
+        }
+        
+        let mut unscrambled_str = String::new();
+        let usc = unscrambled_vec.clone();
+        for i in usc {
+            unscrambled_str.push_str(i);
+        }
+        
+        (unscrambled_str, unscrambled_vec)
+    }    
+    let (unscrambled_passphrase_str, unscrambled_passphrase_vec) = unscramble(scrambled_passphrase_vec, club_jim_auth_number);
+    println!("unscrambled passphrase: {:?}", unscrambled_passphrase_str);
     
     
     // But wait! What if Eve tries to get in???
@@ -169,10 +214,8 @@ fn main() {
     let eve_public_number = exp_mod(club_base_number, eve_secret_number, modulo); // 14
     let eve_auth_number = exp_mod(club_public_number, eve_secret_number, modulo); // 18
     let club_eve_auth_number = exp_mod(eve_public_number, club_secret_number, modulo); // 
-    println!("{}", club_eve_auth_number);
-    
-    // do we want to create a list of members and their auth numbers to prove they're in the club?
-    // or should we change the whole thing to represent message passing rather then club authentication?
+    //println!("{}", club_eve_auth_number);
+
 }
 ```
 
