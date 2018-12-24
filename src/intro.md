@@ -1,4 +1,4 @@
-# Crypto Wars
+![Crypto Wars](https://fontmeme.com/temporary/b761cf564858012045e0e999012d87d7.png)
 
 ![space](https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Location_of_Earth_%281x9-English_Annot-small%29.png/400px-Location_of_Earth_%281x9-English_Annot-small%29.png)
 
