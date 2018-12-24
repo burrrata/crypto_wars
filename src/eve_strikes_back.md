@@ -14,7 +14,7 @@ Concepts to Cover:
 Story Arch:
 - Eve learns the dark arts of cryptanalysis and social engineering. Meanwhile Alice and Bob are enjoying their club so much that they get tired of doing all the work of checking and doing the protocol they implimented. Since Eve hasn't attacked in a while anyways, they oursource verification to Alice's little brother in exchange for a chocolate bar every other friday. Alice's mom is a strict vegan health nut so this is a big deal for her little brother.
 - Eve completely [pwns](https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fa.abcnews.com%2Fimages%2FUS%2F160112_vod_orig_ice%2520_mixdown_16x9_992.jpg&f=1) Alice and Bob in various ways: first intercepting messages and using brute force attacks and cryptanalysis to uncover the secret messages, then by sending false information between club memeber to create drama and upset, and then by bribing Alice's little brother with a Snickers bar to give her access to the secret master keys. 
-- Alice and Bob are forced to abandon the treehouse because it becomes untenable and overrun with field trips from CS schools warning of the perrils of rolling your own crypto.
+- Alice and Bob are forced to abandon the treehouse because it becomes untenable and overrun with field trips from CS schools warning students of the perrils of rolling your own crypto.
 
 
 ### Upgrades for part 3:
