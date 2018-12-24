@@ -217,7 +217,7 @@ Everyone celebrates and lives happily ever after, or do they... While Alice and 
 
 Find out in part 2: [Eve Strikes Back!](https://github.com/burrrata/the_cryptoeconomics_cookbook/blob/master/src/eve_strikes_back.md)
 
-<br>
+<hr>
 
 ### Recommend Research Resources
 - [Wikipedia: modulo operation](https://en.wikipedia.org/wiki/Modulo_operation)
@@ -274,21 +274,7 @@ fn main() {
 }
 ```
 
-<br>
-<br>
 <hr>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 
 ### TODOS
 - explain primitive root modulo stuff linking 5 to 23
