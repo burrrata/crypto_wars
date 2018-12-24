@@ -15,13 +15,14 @@
 - it would be cool to actually have a gif/video of an avalanche to emphasize that while you know **something** happened, you can't which piece of snow on the ground came from which place on the mountain because it's all jumbled up (and would be uniquely for every new avalanche)
 
 ## Story Arch
-- Alice and Bob strike back!
 
-P1) Learning The Hard Way
+### Alice and Bob strike back!
+
+### P1) Learning The Hard Way
 - Alice and Bob explore best practices in crypto such as: don't roll your own crypto, use audited code and protocols, don't reuse passphrases or keys, don't let other people hold/control your keys, don't use a centralized processor to manage security or data access.
 
-P2) Sweet Revenge
+### P2) Sweet Revenge
 - They use Alice's little brother as a honeypot to catch Eve red handed manipulating the old codes
 
-P3) Survival of the Fittest
+### P3) Survival of the Fittest
 - They impliment a newer better protocol impressing all the CS professors who used to laugh at them, and Eve is banned from learning any more trickery in the computer lab. (might be better if she was permanently vanquished or converted to an ally than just being censored?)
