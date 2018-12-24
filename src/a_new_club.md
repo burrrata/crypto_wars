@@ -223,7 +223,9 @@ Now you're probably wondering: "Isn't that a bit convoluted? I mean they could j
 
 <br>
 
-![celebrate](https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperbrowse.com%2Fmedia%2Fimages%2Fcelebrate.jpg&f=1)
+<p align="center">
+    <img src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperbrowse.com%2Fmedia%2Fimages%2Fcelebrate.jpg&f=1">
+</p>
 
 <br>
 
