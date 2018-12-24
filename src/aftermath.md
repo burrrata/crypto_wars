@@ -9,7 +9,8 @@ What did you think about the book? Did you like it? Did it suck? Let us know!
 Cryptoeconomics.Study Forum
 - https://forum.cryptoeconomics.study/
 
-Email me directly: burrrata at protonmail.com
+Email me directly
+- burrrata at protonmail.com
 
 
 ## Production Ready Libraries
