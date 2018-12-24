@@ -85,22 +85,6 @@ Anyways, the way to check that Jim is part of the club is to do 2 things:
 Let's try this out!
 
 ```rust,editable
-
-// TODO:
-// - add a string for the passphrase
-// - add a function to scramble the passphrase
-// - add a function that simulates Eve's futile guessing
-
-// also todo: 
-// it would be nice to iterate through chars instead of vecs
-// but I'm in brainstorming mode and vecs work everytime while chars
-// are temperamental
-
-// yet another todo: 
-// it would be nice to iterate through chars instead of vecs
-// but I'm in brainstorming mode and vecs work everytime while chars
-// are temperamental
-
 fn main() {
     
     
@@ -224,6 +208,19 @@ fn main() {
     
     
     
+    // Attacks and Failures
+    // - it would be great to include a framework for people
+    // - to try random values and see if they work or not
+    // - 
+    // - then create a game (with larger primes) where the secret
+    // numbers are chosen randomly you have to prove that you
+    // - know the secret number to get into the club (thus
+    // - showing how it's easy to prove if you're in the club
+    // - but much harder to break if you're not in the club)
+    // - 
+    // - then link to a real dh library in rust that explains
+    // - how to use it in practice and provides secure code
+    
     // PART 2: Eve Strikes Back!
     // But wait! 
     // What if Eve hears someone saying a scrambled passphrase
@@ -258,32 +255,6 @@ fn main() {
 
 Now you're probably wondering: "Isn't that a bit convoluted? I mean they could just have a list of people's names and then look out the window and see if that person is the person on the list!" Yes... they **could**, but what about on Halloween when everyone's wearing costumes, or at night when it's dark, or during they day when they're bored? These are the questions that keep me up at night, and apparently Alice and Bob feel the same way. Now they can have their secret club with secret numbers and all Eve knows is that whenever she tries to say random numbers she can't get it. Yay!
 
-Notes:
-- These children live in a magical land where a witch put a curse on the treehouse and what happens at the treehouse stays in the treehouse, including memory of the club's secret number.
-- Don't be like Eve trying to live off of the fumes of other people's lives. Get a hobby, get some friends, and leave everyone else alone :)
-- Treehouses are cool. You honestly might be better off going outside and hangingout in a tree than reading this tutorial. Too late now, but next time...
-
-<br>
-<hr>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-### TODO
-- make sure that there are no trailing references to the Club Public Number when it should be the Club Base Number which is 5.
-- is it confusing that Jim's public number is the same as his private number, even though the modulo stuff is explained and demonstrated?
-- to minimize vocabulary juggling and manitain relevance in the context of public private key crypto, search and replace: number => key, secret => private
-
-<br>
 
 ### Recommend Research Resources
 - wikipedia modulo operation: https://en.wikipedia.org/wiki/Modulo_operation
@@ -292,39 +263,13 @@ Notes:
 - computerphile modulo: https://www.youtube.com/watch?v=Yjrfm_oRO0w
 - rust playground: https://play.rust-lang.org/
 
-<br>
-
-### old code that follows the wikipedia article
+### code that follows the wikipedia article
+Feel free to edit and play around with it here, or copypasta into the [Rust Playground](https://play.rust-lang.org/)
 ```rust,editable
-// TODO:
-//
-// Primitive Root Modulo Stuff
+// TODO: add an explanation for primitive Root Modulo Stuff
 // - the base is a primitive root modulo
 // - this is not explained, thus this is not an end-to-end tutorial
 // - how do we explain this simply?
-//
-// Attacks and Failures
-// - it would be great to include a framework for people
-// - to try random values and see if they work or not
-// - 
-// - then create a game (with larger primes) where the secret
-// numbers are chosen randomly you have to prove that you
-// - know the secret number to get into the club (thus
-// - showing how it's easy to prove if you're in the club
-// - but much harder to break if you're not in the club)
-// - 
-// - then link to a real dh library in rust that explains
-// - how to use it in practice and provides secure code
-
-
-
-// This is the (editable) code that our friends Alice 
-// and Bob used for their secret club. Feel free to
-// uncomment the println!() macros to see what's going on.
-// This also happens to follow the example in the wikipedia
-// article on Diffie-Hellman key exchange, so feel free to
-// check that out as well,
-// https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange
 
 fn main() {
  
@@ -366,3 +311,52 @@ fn main() {
     
 }
 ```
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+### Notes:
+- These children live in a magical land where a witch put a curse on the treehouse and what happens at the treehouse stays in the treehouse, including memory of the club's secret number.
+- Don't be like Eve trying to live off of the fumes of other people's lives. Get a hobby, get some friends, and leave everyone else alone :)
+- Treehouses are cool. You honestly might be better off going outside and hangingout in a tree than reading this tutorial. Too late now, but next time...
+
+### TODO
+// - add a string for the passphrase
+// - add a function to scramble the passphrase
+// - add a function that simulates Eve's futile guessing
+
+// also todo: 
+// it would be nice to iterate through chars instead of vecs
+// but I'm in brainstorming mode and vecs work everytime while chars
+// are temperamental
+
+// yet another todo: 
+// it would be nice to iterate through chars instead of vecs
+// but I'm in brainstorming mode and vecs work everytime while chars
+// are temperamental
+
+// make sure that there are no trailing references to the Club Public Number when it should be the Club Base Number which is 5.
+
+// is it confusing that Jim's public number is the same as his private number, even though the modulo stuff is explained and demonstrated?
+
+// to minimize vocabulary juggling and manitain relevance in the context of public private key crypto, search and replace: 
+// - number => key
+// - secret => private
+
+
+<br>
+
+
