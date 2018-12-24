@@ -1,9 +1,13 @@
 # Aftermath
 
-This is where links to more resources will go:
-- production libraries of the concepts Alice, Bob, and Eve explored
-- links to more learning resources
-- and so much more...
+## Questions Comments Suggestions
+
+What did you think about the book? Did you like it? Did it suck? Let us know!
+
+Cryptoeconomics.Study Forum
+- https://forum.cryptoeconomics.study/
+
+Email me directly: burrrata at protonmail.com
 
 
 ## Production Ready Libraries
