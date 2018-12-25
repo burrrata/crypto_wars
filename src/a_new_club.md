@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://fontmeme.com/temporary/a96def546c5c87b5a4f0a1f6eabaadbc.png">
+    <img src="a_new_club_logo.png">
 </p>
 
 AKA Public/Private Key Crypto: What is it and why should you care?
