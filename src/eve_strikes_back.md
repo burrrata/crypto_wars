@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://fontmeme.com/temporary/84289f0a7747325c08a5627234c0bd49.png">
+    <img src="eve_strikes_back_logo.png">
 </p>
 
 <br>
