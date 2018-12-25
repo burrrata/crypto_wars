@@ -1,7 +1,10 @@
 <p align="center">
   <img src="crypto_wars_logo.png">
+  <br>
   <img src="crypto_wars_intro.png">
+  <br>
   <img src="crypto_wars_intro_text.png">
+  <br>
   <img src="galaxy.png">
 </p>
 
