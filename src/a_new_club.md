@@ -96,6 +96,10 @@ Good question. The way to check that Jim is part of the club is to do a few thin
 ### Let's try it out!
 
 ```rust,editable
+// Notes 
+// - You can push the triangular shaped play button in the top right of this frame to run the code as is.
+// - You can also edit this code however you want! It's a live Rust Playground so change stuff, experiment, and just push the triangle when you're ready to see what happens. Hint: you can change the player's secret numbers to any numbers and it should all still work. Beyond that though, you're on your own. Boldly go where you have not gone before! :) 
+
 fn main() {
     
     
