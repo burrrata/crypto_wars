@@ -95,7 +95,7 @@ Anyways, the way to check that Jim is part of the club is to do a few things:
 
 // TODO:
 // - clean up the spaghetti code
-// - add comments to explain everything
+// - add comments that correlate with the storyline and above explanation to bridge the concepts from enligh to code
 
 fn main() {
     
