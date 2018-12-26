@@ -10,6 +10,7 @@
 <br>
 
 ## Concepts To Cover
+- explain how it is NOT ideal for multiple private keys to correlate to the same public key (collision!) and show ways that Eve can exploit this! Then lead into how Alice and Bob might remedy that situation with larger primes and a better scrambling funciton. 
 - man in the middle attacks => spoofing, rerouting, or crypanalysis of scrambled messages
 - rate limiting to prevent online brute force attacks (does not prevent captured messages via MIM attacks and offline hash cracking via rainbow tables or hashcat)
 - randomness (Alice and Bob use the same keys every time, so Eve can perform cryptanalysis)
