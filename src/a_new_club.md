@@ -80,7 +80,9 @@ fn main() {
 
 Now Jim has a public number (4), but no one knows what number was multiplied around the clock to get there. Could be 5\*\*4, could be 5\*\*26, could be 5\*\*136, or many others... 
 
-Anyways, the way to check that Jim is part of the club is to do a few things:
+### Good for Jim, but how does this help Alice and Bob with their club?
+
+Good question. The way to check that Jim is part of the club is to do a few things:
 - Jim multiplies the club's public number times itself as many times as his secret number
 - Whoever is in the club multiplies Jim's public number times itself as many times as the club secret number
 - They then write each number down on a piece paper, fold the papers into airplanes, and throw them at each other. Now both Jim and the people in the club have a shared secret that no one else knows that they can use to scramble and unscramble the secret passphrase!
