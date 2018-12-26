@@ -314,4 +314,4 @@ fn main() {
 - To minimize vocabulary juggling and manitain relevance in the context of public private key crypto, search and replace: 
     - number => key
     - secret => private
-- Would it be easier for people to read/engage with if we used strings and chars instead of Vecs? (the passphrases would be easier to work with and it would work better for APIs or CLI applications, but the functions would be convoluted af) (a little verbose, but maybe use strings and make the functions convert the strings to Vecs and back again within the function?)
+- Would it be easier for people to read/engage with the code if we used strings and chars instead of Vecs? (the passphrases would be easier to work with and it would work better for APIs or CLI applications, but the functions would be convoluted af) (a little verbose, but maybe we could use strings and make the functions convert the strings to Vecs and back again within the function?)
