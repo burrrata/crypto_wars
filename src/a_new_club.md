@@ -302,12 +302,13 @@ fn main() {
 
 <br>
 
-### TODOS
-- explain [primitive root modulo](https://en.wikipedia.org/wiki/Primitive_root_modulo_n) stuff linking 5 to 23
-- explain how it is NOT ideal for multiple private keys to correlate to the same public key (collision!), and for larger primes this is statisticaly ~impossible.
-- is it confusing that Jim's public number is the same as his private number, even though the modulo stuff is explained and demonstrated?
-- make sure that there are no trailing references to the Club Public Number when it should be the Club Base Number which is 5.
-- to minimize vocabulary juggling and manitain relevance in the context of public private key crypto, search and replace: 
+## TODOS
+- Explain [primitive root modulo](https://en.wikipedia.org/wiki/Primitive_root_modulo_n) stuff linking 5 to 23
+- Incorporate the Secrecy Chart explanation from the [wikipedia article](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange) (and the actual chart) into the storyline to further clarify why this theoretically works as well as to create a more analytical reference point when we want to break and then strengthen/extend it with stronger primes.
+- Explain how it is NOT ideal for multiple private keys to correlate to the same public key (collision!), and for larger primes this is statisticaly ~impossible.
+- Is it confusing that Jim's public number is the same as his private number, even though the modulo stuff is explained and demonstrated?
+- Make sure that there are no trailing references to the Club Public Number when it should be the Club Base Number which is 5.
+- To minimize vocabulary juggling and manitain relevance in the context of public private key crypto, search and replace: 
     - number => key
     - secret => private
-- would it be easier for people to read/engage with if we used strings and chars instead of Vecs? (the passphrases would be easier to work with and it would work better for APIs or CLI applications, but the functions would be convoluted af) (a little verbose, but maybe use strings and make the functions convert the strings to Vecs and back again within the function?)
+- Would it be easier for people to read/engage with if we used strings and chars instead of Vecs? (the passphrases would be easier to work with and it would work better for APIs or CLI applications, but the functions would be convoluted af) (a little verbose, but maybe use strings and make the functions convert the strings to Vecs and back again within the function?)
