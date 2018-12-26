@@ -2,7 +2,7 @@
     <img src="a_new_club_logo.png">
 </p>
 
-AKA Public/Private Key Crypto: What is it and why should you care?
+## AKA Public/Private Key Crypto: What is it and why should you care?
 
 Back in the day, for most of human history, if someone wanted to communicate securely they had to either be in the same place at the same time, or use a shared secret code to encrypt and decrypt messages. This was problematic because in order to agree on and share a secret code you had first meet in person, and then if you changed your mind or someone broke your code you'd have to meet up again to agree to a new scheme. Not practical in a 24/7 globally connected digital world. Fortunately for us, a few guys named [Merkle](https://en.wikipedia.org/wiki/Ralph_Merkle), [Diffie](https://en.wikipedia.org/wiki/Whitfield_Diffie), and [Hellman](https://en.wikipedia.org/wiki/Martin_Hellman) came up with some [pretty cool ideas](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange) on how to securely share private data over public networks. 
 
@@ -237,11 +237,11 @@ Everyone celebrates and lives happily ever after, or do they... While Alice and 
 
 <br>
 
-# Find out in part 2: [Eve Strikes Back!](https://github.com/burrrata/the_cryptoeconomics_cookbook/blob/master/src/eve_strikes_back.md)
+### Find out in part 2: [Eve Strikes Back!](https://github.com/burrrata/the_cryptoeconomics_cookbook/blob/master/src/eve_strikes_back.md)
 
 <br>
 
-### Recommend Research Resources
+## Recommend Research Resources
 - [Wikipedia: modulo operation](https://en.wikipedia.org/wiki/Modulo_operation)
 - [Wikipedia: diffie hellman](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange)
 - [Computerphile: diffie hellman with colors](https://www.youtube.com/watch?v=NmM9HA2MQGI)
