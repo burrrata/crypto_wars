@@ -6,7 +6,7 @@
 
 Back in the day, for most of human history, if someone wanted to communicate securely they had to either be in the same place at the same time, or use a shared secret code to encrypt and decrypt messages. This was problematic because in order to agree on and share a secret code you had first meet in person, and then if you changed your mind or someone broke your code you'd have to meet up again to agree to a new scheme. Not practical in a 24/7 globally connected digital world. Fortunately for us, a few guys named [Merkle](https://en.wikipedia.org/wiki/Ralph_Merkle), [Diffie](https://en.wikipedia.org/wiki/Whitfield_Diffie), and [Hellman](https://en.wikipedia.org/wiki/Martin_Hellman) came up with some [pretty cool ideas](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange) on how to securely share private data over public networks. 
 
-### Let's see how it works...
+### Coincidentally, our friends Alice and Bob are working through this right now...
 
 <p align="center">
     <img src="https://i.huffpost.com/gen/804469/images/o-COOL-TREEHOUSE-DESIGNS-facebook.jpg">
@@ -14,7 +14,9 @@ Back in the day, for most of human history, if someone wanted to communicate sec
 
 Alice and Bob built a treeshouse. Like anyone with a treehouse, they started a secret club. Like every secret club, there needs to be a secret way to prove that you're part of the secret club. Normally there would just be a cool passphrase or knock that you would yell to have the rope thrown down, but... this means that anyone nearby could learn their secret code! This wouldn't be that big of a deal, but there's this chick named Eve who believes that the world should have no secrets, and especially no secret clubs. Why? We'll never know, but she's always watching... and whenever she learns anything she posts it on the school bulletin board for everyone to know. Now Timmy has a daily panic attack when people put bugs in his desk and Sarah has to wear ear plugs incase anyone utters a palindrome, and they often do. Needless to say, if everyone knew the clubs secret code it would be a disaster ¯\\_(ツ)_/¯
 
-So, Alice and Bob come up with a plan... First they thought about using [secret colors](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange) because that seems to be [what everyone else is doing](https://www.youtube.com/watch?v=NmM9HA2MQGI), but when they tried it everything just turned brown. This meant anyone could just mix all the colors together to produce brown without actually knowing Alice and Bob's secret colors! Not cool, and besides, who wants to live in a world where everything's brown? Requiring a practical solution, Alice and Bob press on, and on one dismal afternoon, while staring at the clock, waiting, for school, to be over... they get an idea! A big one! What if instead of using colors, they used numbers, but instead of using any random numbers, they used numbers that wrap around [like a clock does](https://www.youtube.com/watch?v=Yjrfm_oRO0w)?
+### What to do?
+
+Alice and Bob come up with a plan... First they thought about using [secret colors](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange) because that seems to be [what everyone else is doing](https://www.youtube.com/watch?v=NmM9HA2MQGI), but when they tried it everything just turned brown. This meant anyone could just mix all the colors together to produce brown without actually knowing Alice and Bob's secret colors! Not cool, and besides, who wants to live in a world where everything's brown? Requiring a practical solution, Alice and Bob press on, and on one dismal afternoon, while staring at the clock, waiting, for school, to be over... they get an idea! A big one! What if instead of using colors, they used numbers, but instead of using any random numbers, they used numbers that wrap around [like a clock does](https://www.youtube.com/watch?v=Yjrfm_oRO0w)?
 
 <p align="center">
     <img src="https://theproducersmiami.com/wp-content/uploads/2017/10/fascinating-24-inch-clock-24-inch-atomic-wall-clock-black-and-white-clock.jpg"
@@ -92,11 +94,6 @@ Anyways, the way to check that Jim is part of the club is to do a few things:
 ### Let's try it out!
 
 ```rust,editable
-
-// TODO:
-// - clean up the spaghetti code
-// - add comments that correlate with the storyline and above explanation to bridge the concepts from enligh to code
-
 fn main() {
     
     
@@ -300,7 +297,8 @@ fn main() {
 
 <br>
 
-## TODOS
+## TODOS: in order of importance
+- Clean up the spaghetti code and add comments that correlate with the storyline and above explanation to bridge the concepts from enligh to code.
 - Explain [primitive root modulo](https://en.wikipedia.org/wiki/Primitive_root_modulo_n) stuff linking 5 to 23
 - Incorporate the Secrecy Chart explanation from the [wikipedia article](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange) (and the actual chart) into the storyline to further clarify why this theoretically works as well as to create a more analytical reference point when we want to break and then strengthen/extend it with stronger primes.
 - Explain how it is NOT ideal for multiple private keys to correlate to the same public key (collision!), and for larger primes this is statisticaly ~impossible.
