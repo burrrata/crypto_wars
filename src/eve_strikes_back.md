@@ -232,3 +232,11 @@ fn main() {
 
 }
 ```
+
+## Resources & Research
+
+Most ideas taken from here and applied to a storyline:
+- https://github.com/cryptoeconomics-study/website/blob/master/book/chapter-01.md
+
+Cryptographic Hash Functions
+- wiki: https://en.wikipedia.org/wiki/Cryptographic_hash_function
