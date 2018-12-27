@@ -3,6 +3,7 @@ authors = ["burrrata"]
 multilingual = false
 src = "src"
 title = "Crypto Wars"
+theme = "ayu"
 
 [output.html]
 mathjax-support = true
