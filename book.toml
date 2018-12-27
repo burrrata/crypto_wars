@@ -9,3 +9,6 @@ mathjax-support = true
 
 [output.html.playpen]
 editable = true
+
+[dependancies]
+rust-crypto = "0.2.36"
