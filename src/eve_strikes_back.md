@@ -19,7 +19,7 @@
 - Hash Collisions: yet another way Eve can pretend to be someone else and mess with A&B's club
 
 ## Concepts To Hint At
-- (2/3) Content Addressing: digital files be easily tampered with... so how do we sign things digitally while preserving all the characteristics that make a signature a signature? Content addressing! (not sure if this is relevant yet as Alice and Bob aren't using software yet, but maybe hint at it here and then have A&B impliment it in part3?)
+- (2/3) Content Addressing: digital files be easily tampered with... so how do we sign things digitally while preserving all the characteristics that make a signature a signature? Content addressing! (not sure if this is relevant yet as Alice and Bob aren't using software yet, but maybe hint at it here and then have A&B impliment it in part3?) (would it be accurate/relevant to also say that using a compiled language like Rust allows for you to verify the authenticity/security of code before running it, whereas JS and Python run in real time and thus can call weird things on the fly?)
 - (intro/all) Goals Of Cryptography: 
     - Integrity: The message I send will arrive at its intended destination intact and unchanged.
     - Authenticity: I can ascertain that the sender and the recipient of the message are the correct ones.
