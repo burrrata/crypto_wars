@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://fontmeme.com/temporary/038fde3ab601587a904b21781b01921d.png">
+  <img src="aftermath.png">
 </p>
 
 <br>
