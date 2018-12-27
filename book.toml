@@ -10,5 +10,5 @@ mathjax-support = true
 [output.html.playpen]
 editable = true
 
-[dependancies]
+[dependencies]
 rust-crypto = "0.2.36"
