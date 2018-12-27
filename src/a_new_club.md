@@ -309,6 +309,7 @@ fn main() {
 - Once the story line is solidified and all the concepts are in place, THEN clean up the spaghetti code and add comments that bridge the storyline (english) to the working example (code).
 
 ## UX TODOS
+- It would be great to incorporate the concept of public keys as addresses that people can send mail to, but only the person who owns the address (controls the key) can open the mailbox. (good because addresses for houses/mailbox and keys to access said houses/mailboxes are concepts people already understand.)
 - Is it confusing that Jim's public number is the same as his private number, even though the modulo stuff is explained and demonstrated?
 - Make sure that there are no trailing references to the Club Public Number when it should be the Club Base Number which is 5.
 - To minimize vocabulary juggling and manitain relevance in the context of public private key crypto, search and replace: 
