@@ -310,6 +310,7 @@ fn main() {
 
 ## UX TODOS
 - It would be great to incorporate the concept of public keys as addresses that people can send mail to, but only the person who owns the address (controls the key) can open the mailbox. (good because addresses for houses/mailbox and keys to access said houses/mailboxes are concepts people already understand.)
+- Would it be good to recreate the "[Math-y Explanation](https://github.com/cryptoeconomics-study/website/blob/master/book/chapter-01.md#the-math-y-explanation)" using arbitrary variables to get the general concept down, and then apply it to Jim, and then apply that to A&B?
 - Is it confusing that Jim's public number is the same as his private number, even though the modulo stuff is explained and demonstrated?
 - Make sure that there are no trailing references to the Club Public Number when it should be the Club Base Number which is 5.
 - To minimize vocabulary juggling and manitain relevance in the context of public private key crypto, search and replace: 
