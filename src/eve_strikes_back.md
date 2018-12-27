@@ -15,7 +15,8 @@
 - rate limiting to prevent online brute force attacks (does not prevent captured messages via MIM attacks and offline hash cracking via rainbow tables or hashcat)
 - randomness (Alice and Bob use the same keys every time, so Eve can perform cryptanalysis)
 - things that are hard to guess for humans vs computers (demo a brute force cracking attack) (stretch goal: a social engineered cracking attack based on Alice and Bob's favorite things)
-- social engineering via publicly available security questions and 
+- social engineering via publicly available security questions
+- Hash Collisions: yet another way Eve can pretend to be someone else and mess with A&B's club
 
 ## Concepts To Hint At
 - (2/3) Content Addressing: digital files be easily tampered with... so how do we sign things digitally while preserving all the characteristics that make a signature a signature? Content addressing! (not sure if this is relevant yet as Alice and Bob aren't using software yet, but maybe hint at it here and then have A&B impliment it in part3?)
@@ -24,8 +25,13 @@
     - Authenticity: I can ascertain that the sender and the recipient of the message are the correct ones.
     - Non-repudiation: An event that has taken place cannot be denied. 
     - Confidentiality: That which is intended to be private will be kept private.
-- 
-
+- (2/3) Trapdoors: Functions that are easy to compute but difficult to invert are called one way functions. A subset of one way functions are trapdoor functions - the only difference being that trapdoor functions can be inverted as long as you have some special secret k. (What if we had Eve pretend to help A&B, but really she was offering them tricky software that her friend Mal created that has a trapdoor in it?)
+- (3) Cryptographic hash function:
+    - Collision resistant: Given two inputs a and b, it is computationally expensive to find H(a) = H(b)
+    - Preimage resistant: Given only the output of H(a), it is computationally infeasible to find a. Brute forcing (guessing every possible input) should be the only way to find it, which is expensive
+    - Second-preimage resistant: Given a, one cannot find b such that H(a) = H(b).
+- (3) Hashes As Commitments: how can this example be incorporated into the story? 
+    - A writer who wants to copyright their manuscript on a certain date can publish a hash of their manuscript to the blockchain, where it gets timestamped. Should there be any dispute over the manuscript in the future, it would be very easy to verify whether the manuscript was hashed and signed on a certain day. It is also important to note that simply changing one letter in the manuscript, or even one bit in the input, should change a large portion of the bits in the output. Hash functions are mainly used for securing the integrity of information and thus also can act as unique identifiers. Since hash functions are deterministic, they are able to prove that certain pieces of information have not been tampered with. If information is tampered with, it will produce a different hash to the original version.
 <br>
 
 ## Story Arc
