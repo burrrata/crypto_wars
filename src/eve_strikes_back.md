@@ -17,6 +17,15 @@
 - things that are hard to guess for humans vs computers (demo a brute force cracking attack) (stretch goal: a social engineered cracking attack based on Alice and Bob's favorite things)
 - social engineering via publicly available security questions and 
 
+## Concepts To Hint At
+- (2/3) Content Addressing: digital files be easily tampered with... so how do we sign things digitally while preserving all the characteristics that make a signature a signature? Content addressing! (not sure if this is relevant yet as Alice and Bob aren't using software yet, but maybe hint at it here and then have A&B impliment it in part3?)
+- (intro/all) Goals Of Cryptography: 
+    - Integrity: The message I send will arrive at its intended destination intact and unchanged.
+    - Authenticity: I can ascertain that the sender and the recipient of the message are the correct ones.
+    - Non-repudiation: An event that has taken place cannot be denied. 
+    - Confidentiality: That which is intended to be private will be kept private.
+- 
+
 <br>
 
 ## Story Arc
