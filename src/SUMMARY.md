@@ -4,3 +4,4 @@
 - [Eve Strikes Back](./eve_strikes_back.md)
 - [Return of the Code](./return_of_the_code.md)
 - [Aftermath](./aftermath.md)
+- [Glossary](./glossary.md)
