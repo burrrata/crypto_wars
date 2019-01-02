@@ -48,8 +48,9 @@ fn main() {
     
     // (b**p) % m
     // function to perform exponential modulo artithmetic 
-    // because rust makes exponential multiplication with 
-    // i32 a real bother
+    // because rust doesn't perform modulo operations 
+    // inbetween the exponential multiplication like python does
+    // and this leads to very large numbers that overflow 
     fn exp_mod(b: i32,
                p: i32,
                m: i32) -> i32 {
