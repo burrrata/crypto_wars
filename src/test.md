@@ -1,12 +1,11 @@
-## Generate random numbers
+## External Crate Test
 
-[![rand-badge]][rand] [![cat-science-badge]][cat-science]
+If you add this to the SUMMARY.md, the mdBook build fails.
 
-Generates random numbers with help of random-number
-generator [`rand::Rng`] obtained via [`rand::thread_rng`]. Each thread has an
-initialized generator. Integers are uniformly distributed over the range of the
-type, and floating point numbers are uniformly distributed from 0 up to but not
-including 1.
+The Rust Cookbook did it, but I don't know how
+- https://rust-lang-nursery.github.io/rust-cookbook/
+- https://github.com/rust-lang-nursery/rust-cookbook
+
 
 ```rust
 extern crate rand;
