@@ -1,3 +1,5 @@
+<br>
+
 <p align="center">
   <img src="crypto_wars_logo.png">
   <img src="crypto_wars_intro.png">
@@ -7,7 +9,7 @@
 
 <br><br><br>
 
-### An Inconvenient Truth
+# An Inconvenient Truth
 - this book is a WIP and as such is incomplete and inaccurate
 - please refer to [Rusty Cryptoeconomics](https://burrrata.github.io/rusty_cryptoeconomics/intro.html) for the time being
 
@@ -27,4 +29,4 @@ Eve uses cryptanalysis to unscramble the messages and decrypt Alice and Bob's co
 ## [Return of the Code](return_of_the_code.md)
 Thrwarted by Eve, Alice and Bob hunker down in the playground and come up with new ideas, and find new hope. Will they finally be able to create thier club? Will this become even more useful than they thought?! We will find out... 
 
-<br>
+<br><br><br>
