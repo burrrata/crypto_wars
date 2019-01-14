@@ -5,9 +5,14 @@
   <img src="galaxy.png">
 </p>
 
+<br><br><br>
+
+### An Inconvenient Truth
+- this book is a WIP and as such is incomplete and inaccurate
+- please refer to [Rusty Cryptoeconomics](https://burrrata.github.io/rusty_cryptoeconomics/intro.html) for the time being
 
 
-<br>
+<br><br><br>
 
 ## [A New Club](a_new_club.md)
 Alice and Bob build a treehouse. Like anyone with a treehouse they started a secret club! Eve wants to unmask their passphrase though so they create an elaborate code to keep it secret.
