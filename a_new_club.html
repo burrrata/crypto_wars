@@ -1,0 +1,503 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>A New Club - Crypto Wars</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    </head>
+    <body class="light">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li class="affix"><a href="intro.html">Intro</a></li><li><a href="a_new_club.html" class="active"><strong aria-hidden="true">1.</strong> A New Club</a></li><li><a href="eve_strikes_back.html"><strong aria-hidden="true">2.</strong> Eve Strikes Back</a></li><li><a href="return_of_the_code.html"><strong aria-hidden="true">3.</strong> Return of the Code</a></li><li class="affix"><a href="aftermath.html">Aftermath</a></li><li class="affix"><a href="glossary.html">Glossary</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Crypto Wars</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <p align="center">
+    <img src="a_new_club_logo.png">
+</p>
+<a class="header" href="#aka-publicprivate-key-crypto-what-is-it-and-why-should-you-care" id="aka-publicprivate-key-crypto-what-is-it-and-why-should-you-care"><h2>AKA Public/Private Key Crypto: What is it and why should you care?</h2></a>
+<p>Back in the day, for most of human history, if someone wanted to communicate securely they had to either be in the same place at the same time, or use a shared secret code to encrypt and decrypt messages. This was problematic because in order to agree on and share a secret code you had first meet in person, and then if you changed your mind or someone broke your code you'd have to meet up again to agree to a new scheme. Not practical in a 24/7 globally connected digital world. Fortunately for us, a few guys named <a href="https://en.wikipedia.org/wiki/Ralph_Merkle">Merkle</a>, <a href="https://en.wikipedia.org/wiki/Whitfield_Diffie">Diffie</a>, and <a href="https://en.wikipedia.org/wiki/Martin_Hellman">Hellman</a> came up with some <a href="https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange">pretty cool ideas</a> on how to securely share private data over public networks.</p>
+<a class="header" href="#coincidentally-our-friends-alice-and-bob-are-working-through-this-right-now" id="coincidentally-our-friends-alice-and-bob-are-working-through-this-right-now"><h3>Coincidentally, our friends Alice and Bob are working through this right now...</h3></a>
+<p align="center">
+    <img src="https://i.huffpost.com/gen/804469/images/o-COOL-TREEHOUSE-DESIGNS-facebook.jpg">
+</p>
+<p>Alice and Bob built a treeshouse. Like anyone with a treehouse, they started a secret club. Like every secret club, there needs to be a secret way to prove that you're part of the secret club. Normally there would just be a cool passphrase or knock that you would yell to have the rope thrown down, but... this means that anyone nearby could learn their secret code! This wouldn't be that big of a deal, but there's this chick named Eve who believes that the world should have no secrets, and especially no secret clubs. Why? We'll never know, but she's always watching... and whenever she learns anything she posts it on the school bulletin board for everyone to know. Now Timmy has a daily panic attack when people put bugs in his desk and Sarah has to wear ear plugs incase anyone utters a palindrome, and they often do. Needless to say, if everyone knew the clubs secret code it would be a disaster ¯\<em>(ツ)</em>/¯</p>
+<a class="header" href="#what-to-do" id="what-to-do"><h3>What to do?</h3></a>
+<p>Alice and Bob come up with a plan... First they thought about using <a href="https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange">secret colors</a> because that seems to be <a href="https://www.youtube.com/watch?v=NmM9HA2MQGI">what everyone else is doing</a>, but when they tried it everything just turned brown. This meant anyone could just mix all the colors together to produce brown without actually knowing Alice and Bob's secret colors! Not cool, and besides, who wants to live in a world where everything's brown? Requiring a practical solution, Alice and Bob press on, and on one dismal afternoon, while staring at the clock, waiting, for school, to be over... they get an idea! A big one! What if instead of using colors, they used numbers, but instead of using any random numbers, they used numbers that wrap around <a href="https://www.youtube.com/watch?v=Yjrfm_oRO0w">like a clock does</a>?</p>
+<p align="center">
+    <img src="https://theproducersmiami.com/wp-content/uploads/2017/10/fascinating-24-inch-clock-24-inch-atomic-wall-clock-black-and-white-clock.jpg"
+</p>
+<a class="header" href="#how-would-this-help-alice-and-bob-securely-share-the-secret-passphrase-without-eve-knowing" id="how-would-this-help-alice-and-bob-securely-share-the-secret-passphrase-without-eve-knowing"><h3>How would this help Alice and Bob securely share the secret passphrase without Eve knowing?!</h3></a>
+<p><code>TODO: explain [primitive root modulo](https://en.wikipedia.org/wiki/Primitive_root_modulo_n) stuff linking 5 to 23</code></p>
+<p>First, the club gets a number. After much consideration Alice and Bob decide that the number shall be 5, and 5 shall be the number. They tell everyone. 5 club is lit af. Everyone wants in, esp Eve...</p>
+<p>Then, the club gets a secret passphrase. At first only Alice and Bob know it, but as well all know, 5 club is lit af so soon more people join. They all know the passphrase, but they can't say it out loud because Eve could be anywhere anytime, always watching... This is truly annoying.</p>
+<p>To get around this unfortunate dilema, Alice and Bob create a number system where, like clocks, the numbers wrap around if you go past the maximum number. In this case we're using a 24hrs clock that wraps around after 23.</p>
+<p>Also, everyone who's part of the club has a secret number. In fact, the club itself even has a secret number. These numbers are so secret that no one knows what they are or might be. They are truly random and unknown. They could be anything...</p>
+<p>Everyone, including the club, also has a public number. These are kind of like an address and everyone knows what these are. How do we create these public numbers in a way that connects them to the private numbers? Well it's easy, just multiply the club's number by it's self (exponentiation) as many times as a person's secret number, but wrap around everytime they go past 23 (like on a clock). For example: if Jim's secret number is 4, then Jim would multiple the club's public number 4 times (5 * 5 * 5 * 5), but would wrap around everytime the value was higher than 23. The symbol for this is %, and the mathematical term is the <a href="https://en.wikipedia.org/wiki/Modulo_operation">modulo operation</a>.</p>
+<a class="header" href="#try-it-out-for-yourself" id="try-it-out-for-yourself"><h3>Try it out for yourself!</h3></a>
+<pre><pre class="playpen"><code class="language-rust editable">
+fn main() {
+    
+    let modulo = 23;
+    let club_public_number = 5;
+    let jim_secret_number = 4; // 4
+    
+    // (b**p) % m
+    // function to perform exponential modulo artithmetic 
+    // because rust doesn't perform modulo operations 
+    // inbetween the exponential multiplication like python does
+    // and this leads to very large numbers that overflow 
+    fn exp_mod(b: i32,
+               p: i32,
+               m: i32) -&gt; i32 {
+        
+        let mut out = (b * b) % m;
+        //println!(&quot;0: {}&quot;, out);
+        for i in 1..p-1 { //because the first iter of out took 2 off the base
+            out = (out * b) % m;
+            //println!(&quot;{}: {}&quot;, i, out);
+        }
+        out
+    }
+    
+    // What's Jim's public number?
+    let jim_public_number = exp_mod(club_public_number, jim_secret_number, modulo);
+    println!(&quot;Jim's public number is: {}&quot;, jim_public_number);
+
+    // let's check for other numbers that could have also created that same public number
+    for i in 0..1000 {
+        let alt_public_number = exp_mod(club_public_number, i, modulo);
+        if alt_public_number == jim_secret_number {
+            println!(&quot;alt secret number: {}&quot;, i);
+        }
+    }
+    
+}
+</code></pre></pre>
+<p>Now Jim has a public number (4), but no one knows what number was multiplied around the clock to get there. Could be 5**4, could be 5**26, could be 5**136, or many others...</p>
+<a class="header" href="#good-for-jim-but-how-does-this-help-alice-and-bob-with-their-club" id="good-for-jim-but-how-does-this-help-alice-and-bob-with-their-club"><h3>Good for Jim, but how does this help Alice and Bob with their club?</h3></a>
+<p>Good question. The way to check that Jim is part of the club is to do a few things:</p>
+<ul>
+<li>Jim multiplies the club's public number times itself as many times as his secret number</li>
+<li>Whoever is in the club multiplies Jim's public number times itself as many times as the club secret number</li>
+<li>They then write each number down on a piece paper, fold the papers into airplanes, and throw them at each other. Now both Jim and the people in the club have a shared secret that no one else knows that they can use to scramble and unscramble the secret passphrase!</li>
+<li>Jim scrambles every letter in the passphrase forward by the shared secret number.</li>
+<li>Jim then proceeds to yell that new series of letters out loud.</li>
+<li>Whoever is in the club writes down those letters, then shifts them backwards by the amount of the shared secret number.</li>
+<li>If it reveals the passphrase, Jim is in!</li>
+<li>Also, even though Eve is creeping in the bushes nearby, everyone who yells a scrambled passphrase to get in yells a different one because it's scrambled based on their unique numbers!</li>
+<li>Eve tries again and again to yell random passphrases but it doesn't work. Horray!</li>
+</ul>
+<a class="header" href="#lets-try-it-out" id="lets-try-it-out"><h3>Let's try it out!</h3></a>
+<pre><pre class="playpen"><code class="language-rust editable">// Notes 
+// - You can push the triangular shaped play button in the top right of this frame to run the code as is.
+// - You can also edit this code however you want! It's a live Rust Playground so change stuff, experiment, and just push the triangle when you're ready to see what happens. Hint: you can change the player's secret numbers to any numbers and it should all still work. Beyond that though, you're on your own. Boldly go where you have not gone before! :) 
+
+fn main() {
+    
+    
+    // Club Parameters
+    let passphrase_as_string = &quot;thepasswordispassword&quot;;
+    let passphrase = vec![&quot;t&quot;, &quot;h&quot;, &quot;e&quot;, &quot;p&quot;, &quot;a&quot;, &quot;s&quot;, &quot;s&quot;, &quot;w&quot;, &quot;o&quot;, &quot;r&quot;, &quot;d&quot;, &quot;i&quot;, &quot;s&quot;, &quot;p&quot;, &quot;a&quot;, &quot;s&quot;, &quot;s&quot;, &quot;w&quot;, &quot;o&quot;, &quot;r&quot;, &quot;d&quot;];
+    let passphrase_test = vec![&quot;t&quot;, &quot;h&quot;, &quot;e&quot;, &quot;p&quot;, &quot;a&quot;, &quot;s&quot;, &quot;s&quot;, &quot;w&quot;, &quot;o&quot;, &quot;r&quot;, &quot;d&quot;, &quot;i&quot;, &quot;s&quot;, &quot;p&quot;, &quot;a&quot;, &quot;s&quot;, &quot;s&quot;, &quot;w&quot;, &quot;o&quot;, &quot;r&quot;, &quot;d&quot;];
+    let modulo = 23;
+    let club_base_number = 5;
+    
+    
+    // (b**p) % m
+    // b = base, p = private, m = modulo
+    fn exp_mod(b: i32,
+               pk: i32,
+               m: i32) -&gt; i32 {
+        // b = base
+        // pk = private key
+        // m = modulo
+        
+        let mut out = (b * b) % m;
+        //println!(&quot;0: {}&quot;, out);
+        for i in 1..pk-1 { //because the first iter of out took 2 off the base
+            out = (out * b) % m;
+            //println!(&quot;{}: {}&quot;, i, out);
+        }
+        out
+    }
+    
+    
+    // Jim's Numbers
+    let jim_secret_number = 4;
+    let jim_public_number = exp_mod(club_base_number, jim_secret_number, modulo); // 4
+    // The Club's Numbers
+    let club_secret_number = 98;
+    let club_public_number = exp_mod(club_base_number, club_secret_number, modulo); // 9
+    
+    
+    // Let's create a secret key between Jim and The Club
+    let jim_auth_number = exp_mod(club_public_number, jim_secret_number, modulo); // 6
+    let club_jim_auth_number = exp_mod(jim_public_number, club_secret_number, modulo); // 6
+    assert_eq!(jim_auth_number, club_jim_auth_number);
+
+
+    // Now let's scramble the passphrase in a way that only the people in the club can unscramble!
+    fn scramble(p: Vec&lt;&amp;str&gt;,
+                k: i32) -&gt; (String, Vec&lt;&amp;str&gt;) {
+        
+        // p = passphrase
+        // k = key
+    
+        let a = vec![&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;, &quot;e&quot;, &quot;f&quot;, &quot;g&quot;, &quot;h&quot;, &quot;i&quot;, &quot;j&quot;, &quot;k&quot;, &quot;l&quot;, &quot;m&quot;, &quot;n&quot;, &quot;o&quot;, &quot;p&quot;, &quot;q&quot;, &quot;r&quot;, &quot;s&quot;, &quot;t&quot;, &quot;u&quot;, &quot;v&quot;, &quot;w&quot;, &quot;x&quot;, &quot;y&quot;, &quot;z&quot;];
+        let key = k as usize;
+        let mut scrambled_vec = Vec::new();
+        
+        for i in p {
+            for j in 0..a.len() {
+                if i == a[j] {
+                    let alpha_index = j;
+                    let scrambled_letter = (alpha_index + key) % 26;
+                    scrambled_vec.push(a[scrambled_letter])
+                }
+            }
+        }
+        
+        let mut scrambled_str = String::new();
+        let sc = scrambled_vec.clone();
+        for i in sc {
+            scrambled_str.push_str(i);
+        }
+        
+        (scrambled_str, scrambled_vec)
+    }
+    let (scrambled_passphrase_str, scrambled_passphrase_vec) = scramble(passphrase, jim_auth_number);
+    
+    // Eve is always watching...
+    //let evesdropped_scrambled_passphrase = scrambled_passphrase_vec.clone(); // rust type `std::vec::Vec&lt;&amp;str&gt;`, which does not implement the `Copy` trait
+    let mut evesdropped_scrambled_passphrase = Vec::new();
+    for i in scrambled_passphrase_vec.clone() {
+        evesdropped_scrambled_passphrase.push(i);
+    }
+    
+    
+    // But can the Secret Club unscramble the passphrase?
+    fn unscramble(p: Vec&lt;&amp;str&gt;,
+                  k: i32) -&gt; (String, Vec&lt;&amp;str&gt;) {
+                  
+        // p = passphrase
+        // k = key
+
+        let a = vec![&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;, &quot;e&quot;, &quot;f&quot;, &quot;g&quot;, &quot;h&quot;, &quot;i&quot;, &quot;j&quot;, &quot;k&quot;, &quot;l&quot;, &quot;m&quot;, &quot;n&quot;, &quot;o&quot;, &quot;p&quot;, &quot;q&quot;, &quot;r&quot;, &quot;s&quot;, &quot;t&quot;, &quot;u&quot;, &quot;v&quot;, &quot;w&quot;, &quot;x&quot;, &quot;y&quot;, &quot;z&quot;];
+        let key = k as usize;
+        let mut unscrambled_vec = Vec::new();
+        
+        for i in p {
+            for j in 0..a.len() {
+                if i == a[j] {
+                    let alpha_index = j;
+                    let unscrambled_letter = (26 + alpha_index - key) % 26;
+                    unscrambled_vec.push(a[unscrambled_letter])
+                }
+            }
+        }
+        
+        let mut unscrambled_str = String::new();
+        let usc = unscrambled_vec.clone();
+        for i in usc {
+            unscrambled_str.push_str(i);
+        }
+        
+        (unscrambled_str, unscrambled_vec)
+    }    
+    let (unscrambled_passphrase_str, unscrambled_passphrase_vec) = unscramble(scrambled_passphrase_vec, club_jim_auth_number);
+    
+    
+    // Did it work?
+    assert_eq!(unscrambled_passphrase_vec, passphrase_test);
+    println!(&quot;original passphrase: {:?}&quot;, passphrase_as_string);
+    println!(&quot;scrambled passphrase: {:?}&quot;, scrambled_passphrase_str);
+    println!(&quot;unscrambled passphrase: {:?}&quot;, unscrambled_passphrase_str);
+
+}
+</code></pre></pre>
+<p><br></p>
+<p>Now you're probably wondering: &quot;Isn't that a bit convoluted? I mean they could just have a list of people's names and then look out the window and see if that person is the person on the list!&quot; They <strong>could</strong>, but what about on Halloween when everyone's wearing costumes, or at night when it's dark, or during they day when they're bored? These are the questions that keep me up at night, and apparently Alice and Bob feel the same way. Now they can have their secret club with secret numbers and all Eve knows is that whenever she tries to guess the passphrase by saying random numbers it doesn't work. Yay!</p>
+<p><br></p>
+<p align="center">
+    <img src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperbrowse.com%2Fmedia%2Fimages%2Fcelebrate.jpg&f=1">
+</p>
+<p><br></p>
+<p>Everyone celebrates and lives happily ever after, or do they... While Alice and Bob are celebrating their new club, Eve is hard at work learning the dark art of cryptanalysis. What will she learn? How will she use it?</p>
+<a class="header" href="#find-out-in-part-2-a-hrefhttpsgithubcomburrratathe_cryptoeconomics_cookbookblobmastersrceve_strikes_backmdeve-strikes-backa" id="find-out-in-part-2-a-hrefhttpsgithubcomburrratathe_cryptoeconomics_cookbookblobmastersrceve_strikes_backmdeve-strikes-backa"><h3>Find out in part 2: <a href="https://github.com/burrrata/the_cryptoeconomics_cookbook/blob/master/src/eve_strikes_back.md">Eve Strikes Back!</a></h3></a>
+<p><br></p>
+<a class="header" href="#recommend-research-resources" id="recommend-research-resources"><h2>Recommend Research Resources</h2></a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Modulo_operation">Wikipedia: modulo operation</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange">Wikipedia: diffie hellman</a></li>
+<li><a href="https://www.youtube.com/watch?v=NmM9HA2MQGI">Computerphile: diffie hellman with colors</a></li>
+<li><a href="https://www.youtube.com/watch?v=Yjrfm_oRO0w">Computerphile: diffie hellman with modulo operations</a></li>
+<li><a href="https://play.rust-lang.org/">The Rust Playground</a></li>
+</ul>
+<p>Rust code that follows along with the <a href="https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange">diffie hellman wikipedia article</a>. Feel free to edit and play around with it here, or copypasta into the <a href="https://play.rust-lang.org/">Rust Playground</a></p>
+<pre><pre class="playpen"><code class="language-rust editable">// TODO: add an explanation for primitive Root Modulo Stuff
+// - the base is a primitive root modulo
+// - this is not explained, thus this is not an end-to-end tutorial
+// - how do we explain this simply?
+
+fn main() {
+ 
+    // Alice and Bob's Agreed Upon Parameters
+    let base = 5;
+    let modulus = 23;
+
+    // Alice and Bob's Private Keys
+    let a_private = 4;
+    let b_private = 3;
+    
+    // Function to perform exponential modulo artithmetic 
+    // because rust makes exponential multiplication with 
+    // i32 a real bother
+    // (b**p) % m
+    fn exp_mod(b: i32,
+               p: i32,
+               m: i32) -&gt; i32 {
+        
+        let mut out = (b * b) % m;
+        //println!(&quot;0: {}&quot;, out);
+        for i in 1..p-1 { //because the first iter of out took 2 off the base
+            out = (out * b) % m;
+            //println!(&quot;{}: {}&quot;, i, out);
+        }
+        out
+    }
+    
+    // Alice and Bob's Public Keys
+    let a_public = exp_mod(base, a_private, modulus);    
+    let b_public = exp_mod(base, b_private, modulus);
+
+    // Let's Check To See If It Worked!
+    let to_a_from_b = exp_mod(b_public, a_private, modulus);
+    let to_b_from_a = exp_mod(a_public, b_private, modulus);
+    assert_eq!(to_a_from_b, to_b_from_a);
+    //println!(&quot;to_a_from_b: {}&quot;, to_a_from_b);
+    //println!(&quot;to_b_from_a: {}&quot;, to_b_from_a);
+    
+}
+</code></pre></pre>
+<p><br></p>
+<hr>
+<p><br></p>
+<a class="header" href="#todos" id="todos"><h2>TODOS</h2></a>
+<ul>
+<li>Explain <a href="https://en.wikipedia.org/wiki/Primitive_root_modulo_n">primitive root modulo</a> stuff linking 5 to 23</li>
+<li>Incorporate the Secrecy Chart explanation from the <a href="https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange">wikipedia article</a> (and the actual chart) into the storyline to further clarify why this theoretically works as well as to create a more analytical reference point when we want to break and then strengthen/extend it with stronger primes.</li>
+<li>Once the story line is solidified and all the concepts are in place, THEN clean up the spaghetti code and add comments that bridge the storyline (english) to the working example (code).</li>
+</ul>
+<a class="header" href="#ux-todos" id="ux-todos"><h2>UX TODOS</h2></a>
+<ul>
+<li>It would be great to incorporate the concept of public keys as addresses that people can send mail to, but only the person who owns the address (controls the key) can open the mailbox. (good because addresses for houses/mailbox and keys to access said houses/mailboxes are concepts people already understand.)</li>
+<li>Would it be good to recreate the &quot;<a href="https://github.com/cryptoeconomics-study/website/blob/master/book/chapter-01.md#the-math-y-explanation">Math-y Explanation</a>&quot; using arbitrary variables to get the general concept down, and then apply it to Jim, and then apply that to A&amp;B?</li>
+<li>Is it confusing that Jim's public number is the same as his private number, even though the modulo stuff is explained and demonstrated?</li>
+<li>Make sure that there are no trailing references to the Club Public Number when it should be the Club Base Number which is 5.</li>
+<li>To minimize vocabulary juggling and manitain relevance in the context of public private key crypto, search and replace:
+<ul>
+<li>number =&gt; key</li>
+<li>secret =&gt; private</li>
+</ul>
+</li>
+<li>Would it be easier for people to read/engage with the code if we used strings and chars instead of Vecs? (the passphrases would be easier to work with and it would work better for APIs or CLI applications, but the functions would be convoluted af) (a little verbose, but maybe we could use strings and make the functions convert the strings to Vecs and back again within the function?)</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="intro.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="eve_strikes_back.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="intro.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="eve_strikes_back.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        <script src="ace.js" type="text/javascript" charset="utf-8"></script>
+        <script src="editor.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mode-rust.js" type="text/javascript" charset="utf-8"></script>
+        <script src="theme-dawn.js" type="text/javascript" charset="utf-8"></script>
+        <script src="theme-tomorrow_night.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

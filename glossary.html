@@ -1,0 +1,397 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Glossary - Crypto Wars</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    </head>
+    <body class="light">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li class="affix"><a href="intro.html">Intro</a></li><li><a href="a_new_club.html"><strong aria-hidden="true">1.</strong> A New Club</a></li><li><a href="eve_strikes_back.html"><strong aria-hidden="true">2.</strong> Eve Strikes Back</a></li><li><a href="return_of_the_code.html"><strong aria-hidden="true">3.</strong> Return of the Code</a></li><li class="affix"><a href="aftermath.html">Aftermath</a></li><li class="affix"><a href="glossary.html" class="active">Glossary</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Crypto Wars</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="#glossary" id="glossary"><h1>Glossary</h1></a>
+<p>A catchall for concepts and resources related to crypto, economics, and cryptoeconomics.</p>
+<p>search #! for open questions/problems</p>
+<p>In addition to abstract definitions, it would be great to add:</p>
+<ul>
+<li>examples and common usecases for each thing</li>
+<li>reference links to dive deeper</li>
+</ul>
+<a class="header" href="#computer-science" id="computer-science"><h1>Computer Science</h1></a>
+<ul>
+<li>state</li>
+<li>nodes</li>
+<li>graphs</li>
+<li>randomness/entropy</li>
+<li>psuedo anonymity and data correlation</li>
+<li>privacy vs anonymity</li>
+<li>etc…</li>
+</ul>
+<a class="header" href="#ledger" id="ledger"><h3>Ledger:</h3></a>
+<p>A record of information.</p>
+<a class="header" href="#state" id="state"><h3>State:</h3></a>
+<p>A snapshot of a ledger at a particular moment in time.</p>
+<a class="header" href="#distributed-ledger" id="distributed-ledger"><h3>Distributed Ledger:</h3></a>
+<p>A ledger that is distributed amongst multiple parties who agree on it's state.</p>
+<a class="header" href="#state-transition" id="state-transition"><h3>State transition:</h3></a>
+<p>A function that takes the state then transforms it into another state.</p>
+<a class="header" href="#consensus" id="consensus"><h3>Consensus:</h3></a>
+<p>The act of reaching agreement between parties.</p>
+<a class="header" href="#game-theory" id="game-theory"><h1>Game Theory:</h1></a>
+<ul>
+<li>equilibrium</li>
+<li>Nash equilibrium</li>
+<li>perto optimal</li>
+<li>prisoners dilemma</li>
+<li>iterated v finite games</li>
+</ul>
+<a class="header" href="#crypto" id="crypto"><h1>Crypto</h1></a>
+<ul>
+<li>verification: hashes, merkle trees, commitment schemes</li>
+<li>security: digital signatures (pub/private key encryption)</li>
+</ul>
+<a class="header" href="#cryptography" id="cryptography"><h3>Cryptography:</h3></a>
+<p>Deals with making communications secure and verifiable.</p>
+<a class="header" href="#cryptoanalysis" id="cryptoanalysis"><h3>Cryptoanalysis:</h3></a>
+<p>Deals with breaking ciphertext, that is, recovering plaintext without knowing the key.</p>
+<a class="header" href="#cryptology" id="cryptology"><h3>Cryptology:</h3></a>
+<p>A branch of mathematics which deals with both cryptography and cryptoanalysis.</p>
+<a class="header" href="#hashes" id="hashes"><h3>Hashes</h3></a>
+<ul>
+<li>Hashes allow us to fingerprint some information with a short name. Anyone can take the hash of some file and save it. You can then use this hash to prove to others that you (a) have seen the file before (b) no one has tampered with the file.</li>
+<li>a secure hash has several properties: avalanche effect, preimage resistance, etc...</li>
+</ul>
+<p>For example, the Bitcoin whitepaper has a certain hash. A while ago the Bitcoin Core foundation wanted to change the official URL of the whitepaper. They wanted it to point to an “improved” version of this whitepaper that Satoshi wrote. Since they control the bitcoin.org URL they can do this. A long time ago someone with foresight saved the hash of this whitepaper in the Blockchain. This means it’s very easy to see if someone well-intentional changes the original file.ered with the file.</p>
+<a class="header" href="#preimage" id="preimage"><h3>Preimage:</h3></a>
+<p>the input to the hash function
+<br>A is a preimage of B if B = hash(A)</p>
+<a class="header" href="#digesthash" id="digesthash"><h3>Digest/Hash:</h3></a>
+<p>the output of the hash function</p>
+<a class="header" href="#preimage-resistance" id="preimage-resistance"><h3>Preimage Resistance:</h3></a>
+<p>it is computationally infeasible to find the input to a hash funciton given it's output.</p>
+<a class="header" href="#collision-resistance" id="collision-resistance"><h3>Collision Resistance:</h3></a>
+<p>a hash funciton produces a unique output for every unique input. A &quot;collision&quot; would be if H(a) = H(b).</p>
+<a class="header" href="#encryption" id="encryption"><h3>Encryption:</h3></a>
+<p>The process of turning a clear-text message (often called Plaintext) into a data stream which looks like a meaningless and random sequence of bits (called ciphertext). The process of turning ciphertext back into plaintext is called decryption.</p>
+<a class="header" href="#symmetric-key-encryption" id="symmetric-key-encryption"><h3>Symmetric Key Encryption:</h3></a>
+<p>Use the same key for encryption and decryption. These algorithms require that both the sender and receiver agree on a key before they can exchange messages securely.</p>
+<a class="header" href="#public-key-algorithms-also-known-as-asymmetric-algorithms" id="public-key-algorithms-also-known-as-asymmetric-algorithms"><h3>Public-key algorithms (also known as asymmetric algorithms):</h3></a>
+<p>Use two different keys (a key pair) for encryption and decryption. The keys in a key pair are mathematically related, but it is computationally infeasible to deduce one key from the other. These algorithms are called “public-key” because the encryption key can be made public. Anyone can use the public key to encrypt a message, but only the owner of the corresponding private key can decrypt it.</p>
+<a class="header" href="#public-key" id="public-key"><h3>Public Key:</h3></a>
+<p>these can be public facing and are often like an address that anyone can send information to.</p>
+<a class="header" href="#private-key" id="private-key"><h3>Private Key:</h3></a>
+<p>every public address has a unique private key. Whoever controls the private key controls the address. While anyone can send data to the public key, only the private key can autorize data to be sent out from the address. This means that you can prove to others that you wrote a certain message. For example, that you authorized a transaction, voted, or posted some content at a certain time before anyone else.</p>
+<a class="header" href="#commitment-scheme" id="commitment-scheme"><h3>Commitment Scheme</h3></a>
+<p>a cryptographic primitive that allows one to commit to a chosen value (or chosen statement) while keeping it hidden to others, with the ability to reveal the committed value later.[1] Commitment schemes are designed so that a party cannot change the value or statement after they have committed to it: that is, commitment schemes are binding. Commitment schemes have important applications in a number of cryptographic protocolsincluding secure coin flipping, zero-knowledge proofs, and secure computation.</p>
+<p>A way to visualize a commitment scheme is to think of a sender as putting a message in a locked box, and giving the box to a receiver. The message in the box is hidden from the receiver, who cannot open the lock themselves. Since the receiver has the box, the message inside cannot be changed—merely revealed if the sender chooses to give them the key at some later time.</p>
+<p>Interactions in a commitment scheme take place in two phases:</p>
+<ul>
+<li>the commit phase during which a value is chosen and specified</li>
+<li>the reveal phase during which the value is revealed and checked</li>
+</ul>
+<a class="header" href="#economics" id="economics"><h1>Economics:</h1></a>
+<ul>
+<li>incentives (rewards/punishments, slashing, block rewards, etc…)</li>
+<li>types of value (financial rewards, reputation, voting power, privilege =&gt; the right to make a certain decision)</li>
+</ul>
+<a class="header" href="#bitcoin-example" id="bitcoin-example"><h3>Bitcoin Example:</h3></a>
+<p>In Bitcoin, when a miner finds a block they get a direct reward of some Bitcoin. More generally we can call this a token reward. The miner also has the privilege to decide which transactions to include in that block, and they generally choose transactions with the highest fees attached.</p>
+<a class="header" href="#pos-example" id="pos-example"><h3>PoS Example:</h3></a>
+<p>In proof of stake nodes put down a security deposit, but if they behave badly this deposit gets taken away.</p>
+<a class="header" href="#blockchain-specific-stuff" id="blockchain-specific-stuff"><h1>Blockchain Specific Stuff</h1></a>
+<ul>
+<li>checkpoint</li>
+<li>epoch</li>
+<li>finality</li>
+<li>fork choice rule</li>
+<li>proof of work</li>
+<li>proof of stake</li>
+</ul>
+<a class="header" href="#checkpoint-ethereum" id="checkpoint-ethereum"><h3>Checkpoint (Ethereum):</h3></a>
+<p>the last block under consideration for finality for a given epoch.</p>
+<a class="header" href="#epoch-ethereum" id="epoch-ethereum"><h3>Epoch (Ethereum):</h3></a>
+<p>a length of time measured in blocks. As of today's specs, an epoch is 100 blocks and spans between two checkpoints.</p>
+<a class="header" href="#finality" id="finality"><h3>Finality:</h3></a>
+<p>The point at which a block has been decided upon by a client to never revert. In PoW rather there is no finality, only deeper block confirmations.</p>
+<a class="header" href="#fork-choice-rule" id="fork-choice-rule"><h3>Fork choice rule:</h3></a>
+<p>the rules for traversing a dag in order to find the canonical chain.</p>
+<a class="header" href="#epoch-ethereum-1" id="epoch-ethereum-1"><h3>Epoch (Ethereum):</h3></a>
+<p>a length of time measured in blocks. As of today’s specs, an epoch is 100 blocks and spans between two checkpoints.</p>
+<a class="header" href="#finality-1" id="finality-1"><h3>Finality:</h3></a>
+<p>The point at which a block has been decided upon by a client to never revert. In PoW rather there is no finality, only deeper block confirmations.</p>
+<a class="header" href="#centralized-nodes" id="centralized-nodes"><h3>Centralized nodes:</h3></a>
+<p>One node controls the network. Fault tolerance is low.</p>
+<a class="header" href="#distributed-nodes" id="distributed-nodes"><h3>Distributed nodes:</h3></a>
+<a class="header" href="#decentralized-nodes" id="decentralized-nodes"><h3>Decentralized nodes:</h3></a>
+<a class="header" href="#decentralized-consensus-consensus-arrived-from-many-parties" id="decentralized-consensus-consensus-arrived-from-many-parties"><h3>Decentralized Consensus: Consensus arrived from many parties</h3></a>
+<a class="header" href="#nonce" id="nonce"><h3>Nonce:</h3></a>
+<a class="header" href="#central-operator" id="central-operator"><h3>Central Operator:</h3></a>
+<a class="header" href="#censorship-resistance" id="censorship-resistance"><h3>Censorship Resistance:</h3></a>
+<a class="header" href="#reorganizationreorg" id="reorganizationreorg"><h3>Reorganization/Reorg:</h3></a>
+<a class="header" href="#blocks" id="blocks"><h3>Blocks:</h3></a>
+<p>Groups of transactions and other their associated meta data that are cryptographically signed and appended to a chain of such blocks.</p>
+<a class="header" href="#minnersvalidators" id="minnersvalidators"><h3>Minners/validators:</h3></a>
+<p>Decides on the order of transaction by voting for it through different cryptographic protocols such proof of work or proof of stake.</p>
+<a class="header" href="#selfish-mining" id="selfish-mining"><h3>Selfish mining:</h3></a>
+<p>The act of mining blocks ahead of the network without broadcasting the blocks.</p>
+<a class="header" href="#porous-boundaries" id="porous-boundaries"><h3>Porous Boundaries:</h3></a>
+<p>Protocols where the users of the protocol can become miners and validators.</p>
+<a class="header" href="#rigid-boundaries" id="rigid-boundaries"><h3>Rigid Boundaries:</h3></a>
+<p>Protocols where users of the protocol can NOT become validators/minners</p>
+<a class="header" href="#checkpoint-ethereum-1" id="checkpoint-ethereum-1"><h3>Checkpoint (Ethereum):</h3></a>
+<p>the last block under consideration for finality for a given epoch.</p>
+<a class="header" href="#rate-limiting" id="rate-limiting"><h3>Rate limiting:</h3></a>
+<a class="header" href="#verifiable-delay-functions" id="verifiable-delay-functions"><h3>Verifiable delay functions:</h3></a>
+<a class="header" href="#randomness-beacon" id="randomness-beacon"><h3>Randomness beacon:</h3></a>
+<p>A source of randomness that is cryptographically secure.
+#! HOW? offchain oracle services via quantum measurements, radioactive decay, or lavalamps?</p>
+<a class="header" href="#burning" id="burning"><h3>Burning:</h3></a>
+<p>The act of destroying a crypto (often by sending to an irretrievable address). Assuming demand stays the same, this reduces supply and thus increases the value per token.</p>
+<a class="header" href="#meta-combining-tools-to-make-secure-cryptoeconomic-mechanisms" id="meta-combining-tools-to-make-secure-cryptoeconomic-mechanisms"><h1>Meta: combining tools to make secure cryptoeconomic mechanisms</h1></a>
+<ul>
+<li>protocol level security (aligning incentives to ideally make the perto optimal outcome also the dominant strategy with no incentive to deviate (Nash)): PoW, PoS</li>
+<li>incentives in iterative games vs finite games with reputation and compounding value</li>
+<li>where we need security vs where it’s nice to have (esp relevant for plasma chains where only account balances/tokens need to be stored on the parent chain)</li>
+<li>voting (QV, correlated slashing, commit/reveal schemes)</li>
+<li>attacks and defenses</li>
+</ul>
+<p>Blockchain: a merklized linked list of blocks where each new block commits a group of transactions/data to the previous one via a hash function, forming a chain of blocks. In order to commit a group of transactions/data, you need to solve a very very complicated puzzle. If one were to try to retroactively change the data in a previous block, you would need quite a bit of compute power to solve all the puzzles between the current block and the block being changed. Considering that all the computers mining blocks (solving puzzles and committing information) on the bitcoin blockchain vastly surpass the compute power of all the world's supercomputers combined... this seems unlikely. Not impossible, but unlikely.</p>
+<ul>
+<li>hashes verify the data's authenticity</li>
+<li>public/private key crypto secures your account</li>
+<li>economic incentives reward people for solving puzzles to secure the network and commit data</li>
+</ul>
+<p>#! this needs to be expanded</p>
+<a class="header" href="#other-stuff" id="other-stuff"><h3>Other Stuff:</h3></a>
+<ul>
+<li>convergence (of blocks, towards a shared truth)</li>
+<li>validity (ensure you have the funds and you signed transaction)</li>
+<li>data availability (you can inspect full historical data)</li>
+<li>non-censorship (if you pay a fee your transaction gets included)</li>
+<li>P+epsilon attacks (taking over a network by bribing participants and paying $1)</li>
+<li>Vickrey auctions (efficient price allocation with private information)</li>
+<li>Fault attribution (punishing bad behavior when you don’t know exactly what happened)</li>
+<li>Dominant assurance contracts (making public goods financing a self-interest)</li>
+<li>Cryptoeconomic security margin (how much do you have to pay to take over a network)</li>
+</ul>
+<p>#! Add bitcoin as a cannonical example of cryptoeconomics in action? (https://discuss.status.im/t/cryptoeconomics-what-is-it-about-and-why-should-you-care/78)</p>
+<a class="header" href="#discouragement-attack" id="discouragement-attack"><h3>Discouragement attack:</h3></a>
+<p>an attack where an adversary burns resources to decrease payoff for others in the network.</p>
+<a class="header" href="#fork-choice-rule-1" id="fork-choice-rule-1"><h3>Fork choice rule:</h3></a>
+<p>the rules for traversing a dag in order to find the canonical chain.</p>
+<a class="header" href="#pow-proof-of-work" id="pow-proof-of-work"><h3>PoW (Proof of Work):</h3></a>
+<p>a consensus mechanism where resources are burned to verify transactions.</p>
+<a class="header" href="#pos-proof-of-stake" id="pos-proof-of-stake"><h3>PoS (Proof of Stake):</h3></a>
+<p>a consensus mechanism where validators stake a number of tokens proportional to their voting power in finalizing blocks.</p>
+<p>#! update this to the latest version and find out what it's actually called
+PoS Consensus
+if a validator node commits an error, it gets penalized an amount proportional to the number of other nodes that have committed an error around the same time. This incentivizes nodes to set themselves up in such a way that their failure rate is maximally uncorrelated with everyone else’s failure rate, reducing the chance that many nodes fail at the same time and threaten to the blockchain’s integrity</p>
+<a class="header" href="#assurance-contract" id="assurance-contract"><h3>Assurance Contract:</h3></a>
+<p>a system where some public good is funded by giving anyone the opportunity to pledge money, and only collecting the pledges if the total amount pledged exceeds some threshold.</p>
+<a class="header" href="#proof-of-stake-conditional-hashcash" id="proof-of-stake-conditional-hashcash"><h3>Proof of stake conditional hashcash:</h3></a>
+<p>when you commit to something (like sending someone an email), you stake a small value along with that commitment and give the receiver the opportunity to burn that stake if they so choose (in this case if they view your message as spam).</p>
+<a class="header" href="#common-misconceptions" id="common-misconceptions"><h1>Common Misconceptions</h1></a>
+<a class="header" href="#onion-hashing" id="onion-hashing"><h3>Onion hashing:</h3></a>
+<ul>
+<li>Using the layers of hashing (ie finding the hash of a hash of a hash) to generate a source of randomness.
+#! This is only a secure form of randomness if the input to the original hash is a cryptographically secure form of entropy. Otherwise it's just psuedorandom because hash functions are deterministic. (mostly sure)</li>
+</ul>
+<a class="header" href="#small-game-fallacies" id="small-game-fallacies"><h3>Small Game Fallacies</h3></a>
+<ul>
+<li>https://unenumerated.blogspot.com/2015/05/small-game-fallacies.html
+When analyzing cryptoeconomics it's VERY important to think about opportunity costs OUTSIDE of the mechanism</li>
+<li>example: if I lock up $X staking ETH, the rate of return/interest has to be MORE than I could get from other investments, including those outside of the crypto world like bonds. This is important otherwise the only participation will be due to altruism, which is a weak strategy.</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="aftermath.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="aftermath.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        <script src="ace.js" type="text/javascript" charset="utf-8"></script>
+        <script src="editor.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mode-rust.js" type="text/javascript" charset="utf-8"></script>
+        <script src="theme-dawn.js" type="text/javascript" charset="utf-8"></script>
+        <script src="theme-tomorrow_night.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
